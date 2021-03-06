@@ -5,14 +5,17 @@ import {
   Route
 } from 'react-router-dom';
 import Home from './layouts/Home/Home';
+import { CustomTheme } from './styles/theme';
 
 const CustomRouting = () => (
   <BrowserRouter>
-    <Switch>
-      <Route exact path="/">
-        <Home />
-      </Route>
-    </Switch>
+    <CustomTheme>
+      <Switch>
+        <Route exact path="/">
+          <Home />
+        </Route>
+      </Switch>
+    </CustomTheme>
   </BrowserRouter>
 );
 

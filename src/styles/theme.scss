@@ -1,0 +1,13 @@
+@import './variables';
+
+.page-content {
+  margin: 0 $page-gap-small;
+
+  @media screen and (min-width: 1024px) {
+    margin: 0 $page-gap-large;
+  }
+
+  @media screen and (min-width: 1400px) {
+    margin: 0 $page-gap-extra-large;
+  }
+}

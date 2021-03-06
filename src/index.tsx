@@ -8,15 +8,12 @@ import ReactDOM from 'react-dom';
 import './index.scss';
 import reportWebVitals from './reportWebVitals';
 import CustomRouting from './routing';
-import { CustomTheme } from './styles/theme';
 
 library.add(fab, far, fas);
 
 ReactDOM.render(
   <React.StrictMode>
-    <CustomTheme>
-      <CustomRouting />
-    </CustomTheme>
+    <CustomRouting />
   </React.StrictMode>,
   document.getElementById('root')
 );

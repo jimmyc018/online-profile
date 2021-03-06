@@ -2,10 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600&display=swap');
 
 body {
-  margin: 0;
   font-family: 'Spartan', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+}
+
+#root > div {
+  min-height: 100vh;
 }
 
 code {
@@ -37,11 +41,11 @@ h4 {
 }
 
 h5 {
-  font-size: 0.9375em;
+  font-size: 0.9375rem;
 }
 
 h6 {
-  font-size: 0.625em;
+  font-size: 0.625rem;
 }
 
 p, span, li, a {

@@ -2,6 +2,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useState } from 'react';
 import styled, { ThemeProvider } from 'styled-components';
 
+import CustomNavbar from '../components/Navbar/Navbar';
+import './theme.scss';
+
 const lightTheme = {
   backgroundColor: '#FFFFFF',
   color: '#000000'
@@ -27,10 +30,21 @@ export function CustomTheme(props: any) {
   return (
     <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
       <GlobalStyles>
-        <button onClick={toggleTheme}>
-          <FontAwesomeIcon icon={theme === 'light' ? ['fas', 'sun'] : ['fas', 'moon']}></FontAwesomeIcon>
-        </button>
-        {props.children}
+        <CustomNavbar themeStyle={theme === 'light' ? lightTheme : darkTheme}>
+          <button
+            className="button"
+            onClick={toggleTheme}
+            style={{
+              backgroundColor: theme === 'light' ? lightTheme.backgroundColor : darkTheme.backgroundColor,
+              color: theme === 'light' ? lightTheme.color : darkTheme.color
+            }}
+          >
+            <FontAwesomeIcon icon={theme === 'light' ? ['fas', 'sun'] : ['fas', 'moon']}></FontAwesomeIcon>
+          </button>
+        </CustomNavbar>
+        <div className="page-content">
+          {props.children}
+        </div>
       </GlobalStyles>
     </ThemeProvider>
   );
