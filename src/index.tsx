@@ -6,7 +6,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import './index.scss';
-import App from './layouts/App/App';
+import Home from './layouts/Home/Home';
 import reportWebVitals from './reportWebVitals';
 import { CustomTheme } from './styles/theme';
 
@@ -15,7 +15,7 @@ library.add(fab, far, fas);
 ReactDOM.render(
   <React.StrictMode>
     <CustomTheme>
-      <App />
+      <Home />
     </CustomTheme>
   </React.StrictMode>,
   document.getElementById('root')
