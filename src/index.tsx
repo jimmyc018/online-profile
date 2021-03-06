@@ -6,8 +6,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import './index.scss';
-import Home from './layouts/Home/Home';
 import reportWebVitals from './reportWebVitals';
+import CustomRouting from './routing';
 import { CustomTheme } from './styles/theme';
 
 library.add(fab, far, fas);
@@ -15,7 +15,7 @@ library.add(fab, far, fas);
 ReactDOM.render(
   <React.StrictMode>
     <CustomTheme>
-      <Home />
+      <CustomRouting />
     </CustomTheme>
   </React.StrictMode>,
   document.getElementById('root')
