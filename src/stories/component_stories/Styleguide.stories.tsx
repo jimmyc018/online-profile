@@ -3,7 +3,7 @@ import React from 'react';
 import { Meta, Story } from '@storybook/react/types-6-0';
 
 import placeholder from '../assets/placeholder.png';
-import '../../../src/index.scss'
+import '../../index.scss'
 
 const Styleguide: React.FC = () => (
   <div className="styleguide">

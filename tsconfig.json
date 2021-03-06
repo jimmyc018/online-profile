@@ -21,9 +21,6 @@
     "jsx": "react-jsx"
   },
   "include": [
-    "./src",
-    "./.storybook/stories",
-    "./.storybook/stories/component_stories",
-    "./.storybook/stories/examples"
+    "./src"
   ]
 }
