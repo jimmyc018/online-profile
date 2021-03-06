@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import styled, { ThemeProvider } from 'styled-components';
 
 import CustomNavbar from '../components/Navbar/Navbar';
+import CustomFooter from '../components/Footer/Footer';
 import './theme.scss';
 
 const lightTheme = {
@@ -45,6 +46,7 @@ export function CustomTheme(props: any) {
         <div className="page-content">
           {props.children}
         </div>
+        <CustomFooter></CustomFooter>
       </GlobalStyles>
     </ThemeProvider>
   );

@@ -1,0 +1,66 @@
+@import '../../styles/variables';
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px $page-gap-small;
+
+  @media screen and (min-width: 1024px) {
+    padding: 50px $page-gap-large;
+  }
+
+  @media screen and (min-width: 1400px) {
+    padding: 50px $page-gap-extra-large;
+  }
+
+  .footer__text {
+    color: #000;
+  }
+
+  &__left-area {
+    display: flex;
+    align-items: center;
+
+    > .footer__icon {
+      font-size: 2.4em;
+      position: relative;
+      animation: movement 2s infinite;
+    }
+
+    .footer__contact {
+      margin-left: 30px;
+    }
+  }
+
+  &__title {
+    font-size: 1.5em;
+  }
+
+  &__email {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 15px;
+
+    .footer__icon {
+      color: #000;
+      font-size: 1.5em;
+    }
+
+    .footer__text {
+      margin-left: 15px;
+    }
+  }
+}
+
+@keyframes movement {
+  0%,
+  100% {
+    right: 0;
+  }
+
+  50% {
+    right: 50px;
+  }
+}
