@@ -1,7 +1,11 @@
 @import '../../styles/variables';
 
 .navbar {
-  padding: 30px $page-gap-small;
+  padding: 70px $page-gap-small;
+
+  .navbar-item {
+    letter-spacing: 0.15em;
+  }
 
   a {
     text-decoration: none;
@@ -33,7 +37,7 @@
   }
 
   @media screen and (min-width: 1024px) {
-    padding: 30px $page-gap-large;
+    padding: 70px $page-gap-large;
 
     .navbar-item {
       font-size: 1.25em;
@@ -41,6 +45,6 @@
   }
 
   @media screen and (min-width: 1400px) {
-    padding: 30px $page-gap-extra-large;
+    padding: 70px $page-gap-extra-large;
   }
 }
