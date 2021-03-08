@@ -12,3 +12,19 @@
     margin: 0 $page-gap-extra-large;
   }
 }
+
+.scroll-btn {
+  border-radius: 50%;
+  height: 50px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: transform .5s ease;
+
+  &--show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

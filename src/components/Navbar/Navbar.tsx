@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 
 import './Navbar.scss';
@@ -28,7 +28,7 @@ class CustomNavbar extends React.Component<any, IState> {
   };
 
   handleClick = () => {
-    this.setState((state: any) => ({ isOpen: !state.isOpen }))
+    this.setState((state: any) => ({ isOpen: !state.isOpen }));
   };
 
   render() {
@@ -59,7 +59,7 @@ class CustomNavbar extends React.Component<any, IState> {
 
           <a
             role="button"
-            className="navbar-burger"
+            className={`navbar-burger ${isOpen ? 'is-active' : ''}`}
             aria-label="menu"
             aria-expanded="false"
             data-target="navbarMenu"
@@ -77,13 +77,30 @@ class CustomNavbar extends React.Component<any, IState> {
         >
           <NavbarEnd className="navbar-end">
             <div className="navbar-item" style={{backgroundColor: themeStyle.backgroundColor}}>
-              <Link to="/" style={{color: themeStyle.color}}>Work</Link>
+              <NavLink
+                exact
+                to="/"
+                style={{color: themeStyle.navbarTextColor}}
+                activeStyle={{
+                  color: themeStyle.navbarActiveTextColor
+                }}
+              >
+                Work
+              </NavLink>
             </div>
             <div className="navbar-item" style={{backgroundColor: themeStyle.backgroundColor}}>
-              <Link to="/About" style={{color: themeStyle.color}}>About</Link>
+              <NavLink
+                to="/About"
+                style={{color: themeStyle.navbarTextColor}}
+                activeStyle={{
+                  color: themeStyle.navbarActiveTextColor
+                }}
+              >
+                About
+              </NavLink>
             </div>
             <div className="navbar-item" style={{backgroundColor: themeStyle.backgroundColor}}>
-              <a href="https://www.dropbox.com/s/ttk8h1czez3wwsa/Jimmy%20Chan%20Resume.pdf?dl=1" style={{color: themeStyle.color}}>Resume</a>
+              <a href="https://www.dropbox.com/s/ttk8h1czez3wwsa/Jimmy%20Chan%20Resume.pdf?dl=1" style={{color: themeStyle.navbarTextColor}}>Resume</a>
             </div>
             <div className="navbar-item">{children}</div>
           </NavbarEnd>

@@ -1,2 +1,23 @@
 @import '../../styles/variables';
 
+.about {
+  &__summary {
+    margin: 76px 0 0 0;
+  }
+
+  .about__heading {
+    font-style: normal;
+    font-weight: $font-weight-semi-bold;
+    font-size: 2rem;
+    line-height: 40px;
+    max-width: 450px;
+    color: $dark-blue;
+  }
+
+  .about__description {
+    font-style: normal;
+    margin-top: 2em;
+    text-align: justify;
+    font-weight: $font-weight-medium;
+  }
+}

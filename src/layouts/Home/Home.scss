@@ -8,12 +8,20 @@
     margin: 140px 0 0 0;
   }
 
+/*   &__highlight-role {
+    background-color: #93ffe4;
+    border: 2px;
+    padding: 5px 2px;
+    font-style: unset;
+  } */
+
   &__blockquote {
     font-style: unset;
     margin: 40px 0 0 0;
     font-size: 1.70rem;
     line-height: 5rem;
     letter-spacing: 0.05rem;
+    font-weight: $font-weight-regular;
   }
 
   &__blockquote-container {
@@ -27,14 +35,15 @@
     flex-direction: column;
 
     .home__project-title {
-      font-size: 1.9rem;
+      color: $black;
+      font-size: 1.8rem;
       font-weight: $font-weight-semi-bold;
       margin-right: 10px;
     }
 
     .home__project-link {
-      color: $extra-light-grey;
-      font-size: 1.13rem;
+      color: $dark-blue;
+      font-size: 1rem;
       font-weight: $font-weight-semi-bold;
     }
   }
@@ -42,9 +51,13 @@
   &__project-head {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    // justify-content: space-between;
     align-items: center;
-    margin: 240px 0 0 0;
+    margin: 180px 0 0 0;
+  }
+
+  &__project-arrow-icon {
+    padding-left: 5px;
   }
 
   &__project-case {
@@ -52,14 +65,17 @@
   }
 
   &__project-case-desc {
+    text-align: justify;
+    text-justify: inter-word;
+
     @media screen and (min-width: 1128px) {
       max-width: 450px;
       padding: 24px;
       background-color: $white;
       position: relative;
-      top: -96px;
+      top: -100px;
       left: 40px;
-      border-radius: 8px;
+      border-radius: 10px;
     }
   }
 
@@ -67,23 +83,29 @@
     font-weight: $font-weight-bold;
     font-style: normal;
     color: $dark-blue;
-
-    @media screen and (min-width: 641px) {
-      padding: 0 0 15px 0;
-      font-size: 1.15rem;
-      line-height: 22px;
-    }
+    padding: 15px 0 20px 0;
+    font-size: 1.5rem;
+    line-height: 22px;
   }
 
   .home__project-case-content {
+    color: #62687F;
+    font-size: 12px;
     font-style: normal;
     font-weight: $font-weight-medium;
-    color: #62687F;
+    line-height: 28px;
+    padding-bottom: 20px;
+  }
 
-    @media screen and (min-width: 641px) {
-      padding: 0 0 16px 0;
-      font-size: 12px;
-      line-height: 28px;
+  .home__project-case-btn {
+    text-align: right;
+
+    .button {
+      border-radius: 25px;
+      background-color: $dark-blue;
+      color: $white;
+      font-weight: $font-weight-semi-bold;
+      padding: 24px;
     }
   }
 
@@ -92,10 +114,8 @@
     font-weight: $font-weight-semi-bold;
     color: #8d96b2;
     letter-spacing: 0.05em;
-    @media screen and (min-width: 641px) {
-      font-size: 10px;
-      line-height: 15px;
-    }
+    font-size: 10px;
+    line-height: 15px;
   }
 
   &__project-case-study {

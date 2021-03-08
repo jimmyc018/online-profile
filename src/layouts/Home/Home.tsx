@@ -2,7 +2,7 @@ import React from 'react';
 
 import './Home.scss';
 import caseOne from '../../assets/case-study-one.png';
-import down from '../../assets/down.png';
+import down from '../../assets/arrow-down.svg';
 import { Link } from 'react-router-dom';
 
 const Home = () => (
@@ -18,19 +18,20 @@ const Home = () => (
     <div className="home__project">
       <div className="home__project-head">
         <p className="home__project-title">Featured projects</p>
-        <p className="home__project-link">All projects</p>
+        <img src={down} alt="down-icon" loading="lazy" className="home__project-arrow-icon"/>
+        {/* <p className="home__project-link">All projects</p> */}
       </div>
       <section className="home__project-case">
-        <Link to="/">
-          <div className="home__project-case-study" id="careApp">
-            <img src={caseOne} alt='Case Study One' loading="lazy"/>
-          </div>
-        </Link>
+        <div className="home__project-case-study" id="careApp">
+          <img src={caseOne} alt='Case Study One' loading="lazy"/>
+        </div>
         <section className="home__project-case-desc">
-          <h2 className="home__project-case-title">The Care App</h2>
+          <h2 className="home__project-case-title">Care app</h2>
           <h3 className="home__project-case-content">As a product design intern, I worked with the Community Integrity team to redesign and ship a part of Facebook’s identity
           confirmation experience on web, iOS and android in 180+ countries.</h3>
-          <h5 className="home__project-case-date">AUG 2019 - NOV 2019 • SYDNEY, AUS</h5>
+          <div className="home__project-case-btn">
+            <Link className="button" to="/ProjectOne" type="button">View Case</Link>
+          </div>
         </section>
       </section>
     </div>
