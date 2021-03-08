@@ -18,6 +18,10 @@
   .navbar-end > .navbar-item {
     margin: 0 20px;
 
+    &:last-child {
+      margin-right: 0;
+    }
+
     a {
       display: inline-block;
     }
@@ -26,7 +30,7 @@
       bottom: 0;
       content: "";
       display: block;
-      height: 2px;
+      height: 3px;
       transition: width 0.3s ease 0s, left 0.3s ease 0s;
       width: 0;
     }

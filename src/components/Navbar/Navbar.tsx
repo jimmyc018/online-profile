@@ -83,7 +83,7 @@ class CustomNavbar extends React.Component<any, IState> {
               <Link to="/" style={{color: themeStyle.color}}>About</Link>
             </div>
             <div className="navbar-item" style={{backgroundColor: themeStyle.backgroundColor}}>
-              <Link to="/" style={{color: themeStyle.color}}>Resume</Link>
+              <a href="https://www.dropbox.com/s/ttk8h1czez3wwsa/Jimmy%20Chan%20Resume.pdf?dl=1" style={{color: themeStyle.color}}>Resume</a>
             </div>
             <div className="navbar-item">{children}</div>
           </NavbarEnd>
