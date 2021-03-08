@@ -4,14 +4,14 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 50px $page-gap-small;
+  padding: 100px $page-gap-small;
 
   @media screen and (min-width: 1024px) {
-    padding: 50px $page-gap-large;
+    padding: 100px $page-gap-large;
   }
 
   @media screen and (min-width: 1400px) {
-    padding: 50px $page-gap-extra-large;
+    padding: 100px $page-gap-extra-large;
   }
 
   .footer__text {
