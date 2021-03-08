@@ -19,7 +19,7 @@ const darkTheme = {
 const GlobalStyles = styled.div`
   background-color: ${({ theme }) => theme.backgroundColor};
 
-  h1, h2, h3, h4, h5, h6, p, span, li {
+  h1, h2, h3, h4, h5, h6, p, span, li, blockquote {
     color: ${({ theme }) => theme.color};
   }
 `;
