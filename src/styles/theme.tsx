@@ -16,7 +16,12 @@ const GlobalStyles = styled.div`
   }
 `;
 
-export class CustomTheme extends React.Component<any, any> {
+interface IState {
+  currentTheme: string;
+  displayScrollBtn: boolean;
+}
+
+export class CustomTheme extends React.Component<any, IState> {
   constructor(props: any) {
     super(props);
     this.state = { currentTheme: 'light', displayScrollBtn: false };
@@ -30,7 +35,7 @@ export class CustomTheme extends React.Component<any, any> {
     document.removeEventListener("scroll", this.handleScroll);
   }
 
-  toggleTheme = () => this.setState((state: any) => ({ currentTheme: state.currentTheme === 'light' ? 'dark' : 'light' }));
+  toggleTheme = () => this.setState((state) => ({ currentTheme: state.currentTheme === 'light' ? 'dark' : 'light' }));
 
   handleScroll = () => {
     const rootElement = document.documentElement;
@@ -58,7 +63,7 @@ export class CustomTheme extends React.Component<any, any> {
       <ThemeProvider theme={currentTheme === 'light' ? LightTheme : DarkTheme}>
         <GlobalStyles>
           <CustomNavbar themeStyle={currentTheme === 'light' ? LightTheme : DarkTheme}>
-            <button
+            {/* <button
               className="button"
               onClick={this.toggleTheme}
               style={{
@@ -70,7 +75,7 @@ export class CustomTheme extends React.Component<any, any> {
               }}
             >
               <FontAwesomeIcon icon={currentTheme === 'light' ? ['fas', 'sun'] : ['fas', 'moon']}></FontAwesomeIcon>
-            </button>
+            </button> */}
           </CustomNavbar>
           <div className="page-content">
             {children}

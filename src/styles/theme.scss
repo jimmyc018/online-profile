@@ -15,13 +15,15 @@
 
 .scroll-btn {
   border-radius: 50%;
-  height: 50px;
+  height: 60px;
+  width: 60px;
   position: fixed;
   bottom: 30px;
   right: 30px;
   opacity: 0;
+  border-style: hidden;
   transform: translateY(100px);
-  transition: transform .5s ease;
+  transition: transform .25s ease;
 
   &--show {
     opacity: 1;

@@ -2,22 +2,74 @@
 
 .about {
   &__summary {
-    margin: 76px 0 0 0;
+    margin: 120px 0 0 0;
   }
 
   .about__heading {
     font-style: normal;
-    font-weight: $font-weight-semi-bold;
-    font-size: 2rem;
+    font-weight: $font-weight-bold;
+    font-size: 3.2rem;
     line-height: 40px;
-    max-width: 450px;
+    max-width: 600px;
     color: $dark-blue;
   }
 
-  .about__description {
+  .about__description-one {
+    font-size: 0.9em;
     font-style: normal;
-    margin-top: 2em;
+    margin: 3em 0 0 0;
     text-align: justify;
+    max-width: 650px;
+    line-height: 2.5rem;
     font-weight: $font-weight-medium;
+  }
+
+  .about__description-two {
+    font-size: 0.9em;
+    font-style: normal;
+    margin: 0 0 2em 0;
+    text-align: justify;
+    max-width: 650px;
+    line-height: 2.5rem;
+    font-weight: $font-weight-medium;
+  }
+
+  .about__tasks {
+    border-style: dotted;
+    border-width: 1px 1px 2px;
+    border-color: transparent transparent rgba(92, 92, 92, 0.21);
+    color: #000000;
+    font-weight: $font-weight-semi-bold;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .about__study-details {
+    border-style: dotted;
+    border-width: 1px 1px 2px;
+    font-style: italic;
+    border-color: transparent transparent rgba(92, 92, 92, 0.21);
+    color: #000000;
+    font-weight: $font-weight-semi-bold;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .about__resume-link {
+    border-radius: 25px;
+    color: $dark-blue;
+    font-weight: $font-weight-semi-bold;
+    padding: 25px;
+    text-decoration: none;
+    margin-bottom: 100px;
+    margin-top: 15px;
+    max-width: 650px;
+  }
+
+  .about__resume-link:hover {
+    background-color: $dark-blue;
+    color: $white;
+    border: none;
+    border-color: white;
   }
 }

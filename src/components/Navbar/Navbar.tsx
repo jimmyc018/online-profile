@@ -82,7 +82,8 @@ class CustomNavbar extends React.Component<any, IState> {
                 to="/"
                 style={{color: themeStyle.navbarTextColor}}
                 activeStyle={{
-                  color: themeStyle.navbarActiveTextColor
+                  color: themeStyle.navbarActiveTextColor,
+                  fontWeight: 600
                 }}
               >
                 Work
@@ -93,15 +94,16 @@ class CustomNavbar extends React.Component<any, IState> {
                 to="/About"
                 style={{color: themeStyle.navbarTextColor}}
                 activeStyle={{
-                  color: themeStyle.navbarActiveTextColor
+                  color: themeStyle.navbarActiveTextColor,
+                  fontWeight: 600
                 }}
               >
                 About
               </NavLink>
             </div>
-            <div className="navbar-item" style={{backgroundColor: themeStyle.backgroundColor}}>
+            {/* <div className="navbar-item" style={{backgroundColor: themeStyle.backgroundColor}}>
               <a href="https://www.dropbox.com/s/ttk8h1czez3wwsa/Jimmy%20Chan%20Resume.pdf?dl=1" style={{color: themeStyle.navbarTextColor}}>Resume</a>
-            </div>
+            </div> */}
             <div className="navbar-item">{children}</div>
           </NavbarEnd>
         </div>
