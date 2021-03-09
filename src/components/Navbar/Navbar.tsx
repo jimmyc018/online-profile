@@ -2,15 +2,22 @@ import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 
+import ITheme from '../../styles/ITheme';
+
 import './Navbar.scss';
+
+interface IProp {
+  children: React.ReactNode,
+  themeStyle: ITheme
+}
 
 interface IState {
   isOpen: boolean;
   width: number;
 }
 
-class CustomNavbar extends React.Component<any, IState> {
-  constructor(props: any) {
+class CustomNavbar extends React.Component<IProp, IState> {
+  constructor(props: IProp) {
     super(props);
     this.state = { isOpen: false, width: window.innerWidth };
   }
@@ -28,7 +35,7 @@ class CustomNavbar extends React.Component<any, IState> {
   };
 
   handleClick = () => {
-    this.setState((state: any) => ({ isOpen: !state.isOpen }));
+    this.setState(state => ({ isOpen: !state.isOpen }));
   };
 
   render() {

@@ -16,13 +16,17 @@ const GlobalStyles = styled.div`
   }
 `;
 
+interface IProp {
+  children: React.ReactNode;
+}
+
 interface IState {
   currentTheme: string;
   displayScrollBtn: boolean;
 }
 
-export class CustomTheme extends React.Component<any, IState> {
-  constructor(props: any) {
+export class CustomTheme extends React.Component<IProp, IState> {
+  constructor(props: IProp) {
     super(props);
     this.state = { currentTheme: 'light', displayScrollBtn: false };
   }
@@ -35,7 +39,7 @@ export class CustomTheme extends React.Component<any, IState> {
     document.removeEventListener("scroll", this.handleScroll);
   }
 
-  toggleTheme = () => this.setState((state) => ({ currentTheme: state.currentTheme === 'light' ? 'dark' : 'light' }));
+  toggleTheme = () => this.setState(state => ({ currentTheme: state.currentTheme === 'light' ? 'dark' : 'light' }));
 
   handleScroll = () => {
     const rootElement = document.documentElement;
@@ -56,7 +60,7 @@ export class CustomTheme extends React.Component<any, IState> {
   };
 
   render() {
-    const { children } = this.props
+    const { children } = this.props;
     const { currentTheme, displayScrollBtn } = this.state;
 
     return (
@@ -77,7 +81,7 @@ export class CustomTheme extends React.Component<any, IState> {
               <FontAwesomeIcon icon={currentTheme === 'light' ? ['fas', 'sun'] : ['fas', 'moon']}></FontAwesomeIcon>
             </button> */}
           </CustomNavbar>
-          <div className="page-content">
+          <main role="main" className="page-content">
             {children}
             <button
               className={`button scroll-btn ${displayScrollBtn ? 'scroll-btn--show' : ''}`}
@@ -85,7 +89,7 @@ export class CustomTheme extends React.Component<any, IState> {
             >
               <FontAwesomeIcon icon={['fas', 'chevron-up']}></FontAwesomeIcon>
             </button>
-          </div>
+          </main>
           <CustomFooter></CustomFooter>
         </GlobalStyles>
       </ThemeProvider>

@@ -20,7 +20,6 @@ const About = () => (
               I studied a Intermediate UX/UI Design course at Academy Xi which had helped me developed one case study.
           </p>
           <a className="button about__resume-link" href="https://www.dropbox.com/s/ttk8h1czez3wwsa/Jimmy%20Chan%20Resume.pdf?dl=1">Download Resume</a>
-
         </div>
       </div>
     </div>
