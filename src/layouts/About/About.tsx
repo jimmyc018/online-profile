@@ -2,7 +2,6 @@ import React from 'react';
 
 import './About.scss';
 
-
 const About = () => (
   <div className="about">
     <div className="about__section">
@@ -19,7 +18,7 @@ const About = () => (
              and Information System program at the Univeristy of Auckland</span>. In the spring of 2019,
               I studied a Intermediate UX/UI Design course at Academy Xi which had helped me developed one case study.
           </p>
-          <a className="button about__resume-link" href="https://www.dropbox.com/s/ttk8h1czez3wwsa/Jimmy%20Chan%20Resume.pdf?dl=1">Download Resume</a>
+          <a className="button about__resume-link" href="https://www.dropbox.com/s/ttk8h1czez3wwsa/Jimmy%20Chan%20Resume.pdf?dl=1">Download Resumé</a>
         </div>
       </div>
     </div>

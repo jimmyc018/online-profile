@@ -7,8 +7,9 @@
 
   .about__heading {
     font-style: normal;
+    font-family: 'PT Serif', serif;
     font-weight: $font-weight-bold;
-    font-size: 3.2rem;
+    font-size: 3.8rem;
     line-height: 40px;
     max-width: 600px;
     color: $dark-blue;
@@ -56,7 +57,8 @@
   }
 
   .about__resume-link {
-    border-radius: 25px;
+    border-radius: 15px;
+    border: 2px solid $dark-blue;
     color: $dark-blue;
     font-weight: $font-weight-semi-bold;
     padding: 25px;
@@ -72,4 +74,5 @@
     border: none;
     border-color: white;
   }
+
 }

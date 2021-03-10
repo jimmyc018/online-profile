@@ -8,8 +8,12 @@
     margin: 0 $page-gap-large;
   }
 
-  @media screen and (min-width: 1400px) {
+  @media screen and (min-width: 1440px) {
     margin: 0 $page-gap-extra-large;
+  }
+
+  @media screen and (min-width: 1903px) {
+    margin: 0 $page-gap-extra-extra-large;
   }
 }
 

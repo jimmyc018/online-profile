@@ -48,7 +48,12 @@
     }
   }
 
-  @media screen and (min-width: 1400px) {
+  @media screen and (min-width: 1440px) {
     padding: 70px $page-gap-extra-large;
   }
+
+  @media screen and (min-width: 1903px) {
+    padding: 70px $page-gap-extra-extra-large;
+  }
+
 }

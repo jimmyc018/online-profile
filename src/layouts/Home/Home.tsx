@@ -8,12 +8,17 @@ import AnimateOnScrollComp from '../../components/AnimateOnScrollComp';
 
 const Home = () => (
   <div className="home">
-    <p className="home__location">📍 Sydney, Australia</p>
+    {/* <p className="home__location">📍 Sydney, Australia</p> */}
+    <p className="home__location">Hello, I'm <span className="home__name-link">Jimmy Chan</span>.</p>
     <div className="home__blockquote-container">
-      <blockquote className="home__blockquote">
+      {/* <blockquote className="home__blockquote">
         Hello, I'm a UI Front-End Developer who love to utilize my
         skills to explore and solve real-life challenges
         a variety of skill sets that will add value.
+      </blockquote> */}
+      <blockquote className="home__blockquote">
+        A Front-End Developer who loves to explore and utilize his skills using
+        a variety of skillsets to solve <span className="home__text-emphasis">real-life challenges</span>, while also adding value.
       </blockquote>
     </div>
     <div className="home__project">
@@ -37,8 +42,8 @@ const Home = () => (
           </AnimateOnScrollComp>
           <AnimateOnScrollComp className="home__project-case-tags">
             <span className="tag">Mobile App</span>
-            <span className="tag">Cancer</span>
-            <span className="tag">Cancer</span>
+            <span className="tag">UX Research</span>
+            <span className="tag">Health</span>
           </AnimateOnScrollComp>
         </div>
       </section>
