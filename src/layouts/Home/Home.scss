@@ -1,8 +1,8 @@
 @import '../../styles/variables';
 
 .home {
-  .home__location {
-    font-size: 3.2rem;
+  .home__greeting {
+    font-size: 3.5rem;
     font-weight: $font-weight-bold;
     color: $dark-blue;
     font-family: 'PT Serif', serif;
@@ -14,9 +14,9 @@
     margin-bottom: 0px;
     font-weight: $font-weight-bold;
     text-decoration: none;
-    font-size: 3.2rem;
+    font-size: 3.5rem;
     border-style: dotted;
-    border-width: 1px 1px 3px;
+    border-width: 1px 1px 4.5px;
     border-color: transparent transparent rgba(92, 92, 92, 0.21);
     cursor: pointer
   }
@@ -154,6 +154,10 @@
       text-decoration: none;
       border-color: #F9F9F9;
       background-color: #F9F9F9;
+    }
+
+    .disabled-link {
+      pointer-events: none;
     }
   }
 

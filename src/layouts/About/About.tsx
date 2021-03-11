@@ -7,7 +7,7 @@ const About = () => (
     <div className="about__section">
       <div className="about__summary">
         <div className="about__at-galance">
-          <h2 className="about__heading">Hi, I'm Jimmy</h2>
+          <h2 className="about__heading">Meet Jimmy</h2>
           <p className="about__description-one">
             Hi there!, I'm a UI Front-End Developer working for Westpac Group. Currently,
             I'm working on <span className="about__tasks">SQL scripting, data extracting, metadata creation

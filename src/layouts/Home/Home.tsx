@@ -9,7 +9,7 @@ import AnimateOnScrollComp, { AnimationDirection } from '../../components/Animat
 const Home = () => (
   <div className="home">
     {/* <AnimateOnScrollComp direction={AnimationDirection.Right}> */}
-    <p className="home__location">Hello, I'm <span className="home__name-link">Jimmy Chan</span>.</p>
+    <p className="home__greeting">Hello, I'm <span className="home__name-link">Jimmy Chan</span>.</p>
     <div className="home__blockquote-container">
       <blockquote className="home__blockquote">
         A front-end developer who loves to explore and utilize his skills using
@@ -34,7 +34,8 @@ const Home = () => (
             experience for patients by also assisting practitioners to save valuable time they require.
             </h3>
             <div className="home__project-case-btn">
-              <Link className="button" to="/ProjectOne" type="button">View Case</Link>
+              {/* <Link className="button" to="/ProjectOne" type="button">View Case</Link> */}
+              <Link className="button disabled-link" to="/ProjectOne" type="button">Coming Soon</Link>
             </div>
           </AnimateOnScrollComp>
           <AnimateOnScrollComp className="home__project-case-tags">
@@ -44,9 +45,6 @@ const Home = () => (
           </AnimateOnScrollComp>
         </div>
       </section>
-      {/* <section>
-        <h4>Concept Design</h4>
-      </section> */}
     </div>
 
   </div>
