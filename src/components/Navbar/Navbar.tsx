@@ -61,7 +61,7 @@ class CustomNavbar extends React.Component<IProp, IState> {
       >
         <div className="navbar-brand">
           <Link className="navbar-item custom-logo" to="/">
-            <h3>Jimmy Chan</h3>
+            <h3 className="navbar__heading">Jimmy Chan</h3>
           </Link>
 
           <a
@@ -83,7 +83,7 @@ class CustomNavbar extends React.Component<IProp, IState> {
           style={{backgroundColor: themeStyle.backgroundColor}}
         >
           <NavbarEnd className="navbar-end">
-            <div className="navbar-item" style={{backgroundColor: themeStyle.backgroundColor}}>
+            <div className="navbar-item navbar__spacing" style={{backgroundColor: themeStyle.backgroundColor}}>
               <NavLink
                 exact
                 to="/"
@@ -96,7 +96,7 @@ class CustomNavbar extends React.Component<IProp, IState> {
                 Work
               </NavLink>
             </div>
-            <div className="navbar-item" style={{backgroundColor: themeStyle.backgroundColor}}>
+            <div className="navbar-item navbar__spacing" style={{backgroundColor: themeStyle.backgroundColor}}>
               <NavLink
                 to="/About"
                 style={{color: themeStyle.navbarTextColor}}
@@ -111,7 +111,7 @@ class CustomNavbar extends React.Component<IProp, IState> {
             {/* <div className="navbar-item" style={{backgroundColor: themeStyle.backgroundColor}}>
               <a href="https://www.dropbox.com/s/ttk8h1czez3wwsa/Jimmy%20Chan%20Resume.pdf?dl=1" style={{color: themeStyle.navbarTextColor}}>Resume</a>
             </div> */}
-            <div className="navbar-item">{children}</div>
+            {/* <div className="navbar-item">{children}</div> */}
           </NavbarEnd>
         </div>
       </nav>

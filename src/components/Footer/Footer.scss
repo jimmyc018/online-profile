@@ -4,14 +4,18 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 150px $page-gap-small;
+  padding: 120px $page-gap-small;
 
   @media screen and (min-width: 1024px) {
-    padding: 150px $page-gap-large;
+    padding: 120px $page-gap-large;
   }
 
-  @media screen and (min-width: 1400px) {
-    padding: 150px $page-gap-extra-large;
+  @media screen and (min-width: 1440px) {
+    padding: 120px $page-gap-extra-large;
+  }
+
+  @media screen and (min-width: 1903px) {
+    padding: 120px $page-gap-medium-large;
   }
 
   .footer__text {
@@ -34,9 +38,10 @@
     // }
   }
 
-  &__title {
+  .footer__title {
+    color: $dark-blue;
     font-size: 1.3em;
-    font-weight: $font-weight-medium;
+    font-weight: $font-weight-semi-bold;
   }
 
   &__email {

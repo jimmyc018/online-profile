@@ -13,7 +13,7 @@ const About = () => (
             I'm working on <span className="about__tasks">SQL scripting, data extracting, metadata creation
             and reporting analysis</span>.
           </p>
-          <br />
+          <br/>
           <p className="about__description-two">I received a Bachelor's degree from <span className="about__study-details">Computer Science
              and Information System program at the Univeristy of Auckland</span>. In the spring of 2019,
               I studied a Intermediate UX/UI Design course at Academy Xi which had helped me developed one case study.

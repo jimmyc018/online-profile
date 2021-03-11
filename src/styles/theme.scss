@@ -29,22 +29,11 @@
   transform: translateY(100px);
   transition: transform .25s ease;
 
-  &--show {
+  &.scroll-btn--show {
+    // background-color: $dark-blue;
+    // color: $white;
     opacity: 1;
     transform: translateY(0);
-  }
-}
-
-.fade-in {
-  opacity: 0;
-  transform: translate(0, 50%);
-  visibility: hidden;
-  transition: opacity 0.8s ease-in, transform 0.8s ease-in;
-  will-change: opacity, visibility;
-
-  &--appear {
-    opacity: 1;
-    transform: none;
-    visibility: visible;
+    font-size: 20px;
   }
 }

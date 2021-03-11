@@ -3,12 +3,19 @@
 .navbar {
   padding: 70px $page-gap-small;
 
-  .navbar-item {
+  .navbar__spacing {
     letter-spacing: 0.15em;
   }
 
   a {
     text-decoration: none;
+  }
+
+  .navbar__heading {
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    font-weight: $font-weight-semi-bold;
+    color: $dark-blue;
   }
 
   .custom-logo {
@@ -53,7 +60,7 @@
   }
 
   @media screen and (min-width: 1903px) {
-    padding: 70px $page-gap-extra-extra-large;
+    padding: 70px $page-gap-medium-large;
   }
 
 }

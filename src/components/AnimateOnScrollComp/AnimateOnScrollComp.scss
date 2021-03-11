@@ -1,0 +1,31 @@
+.fade-in {
+  opacity: 0;
+  visibility: hidden;
+  will-change: opacity, visibility;
+
+  &--up {
+    transform: translate(0, 50%);
+    transition: opacity 0.8s ease-in, transform 0.8s ease-in;
+  }
+
+  &--down {
+    transform: translate(0, -50%);
+    transition: opacity 0.8s ease-in, transform 0.8s ease-in;
+  }
+
+  &--left {
+    transform: translate(50%, 0);
+    transition: opacity 0.8s ease-in, transform 1.2s ease-in;
+  }
+
+  &--right {
+    transform: translate(-50%, 0);
+    transition: opacity 0.8s ease-in, transform 1.2s ease-in;
+  }
+
+  &--appear {
+    opacity: 1;
+    transform: none;
+    visibility: visible;
+  }
+}

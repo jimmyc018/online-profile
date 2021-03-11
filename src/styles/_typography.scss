@@ -7,6 +7,11 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   margin: 0;
+
+  // &:hover {
+  //   cursor: url("../assets/circle.cur"), default;
+  //   border: 2px #FFFFFF;
+  // }
 }
 
 #root > div {

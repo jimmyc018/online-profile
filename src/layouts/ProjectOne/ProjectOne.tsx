@@ -4,7 +4,9 @@ import './ProjectOne.scss';
 
 
 const ProjectOne = () => (
-  <h1>The Care</h1>
+  <div className="projectOne">
+      <h1 className="projectOne__heading">The Care</h1>
+  </div>
 
 );
 
