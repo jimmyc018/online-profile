@@ -19,7 +19,7 @@ const Home = () => (
     {/* </AnimateOnScrollComp> */}
     <div className="home__project">
       <div className="home__project-head">
-        <img src={document} alt="document-icon" loading="lazy" className="home__project-document-icon"/>
+        {/* <img src={document} alt="document-icon" loading="lazy" className="home__project-document-icon"/> */}
         <p className="home__project-title">Featured projects</p>
         {/* <p className="home__project-link">All projects</p> */}
       </div>
@@ -44,6 +44,9 @@ const Home = () => (
           </AnimateOnScrollComp>
         </div>
       </section>
+      {/* <section>
+        <h4>Concept Design</h4>
+      </section> */}
     </div>
 
   </div>

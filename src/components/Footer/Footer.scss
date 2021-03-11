@@ -2,8 +2,9 @@
 
 .footer {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding: 120px $page-gap-small;
 
   @media screen and (min-width: 1024px) {
@@ -23,26 +24,16 @@
     font-weight: $font-weight-medium;
   }
 
-  &__left-area {
-    display: flex;
-    align-items: center;
+  // &__left-area {
+  //   display: flex;
+  //   align-items: center;
 
-    > .footer__icon {
-      font-size: 2.4em;
-      position: relative;
-      animation: movement 2s infinite;
-    }
-
-    // .footer__contact {
-    //   margin-left: 30px;
-    // }
-  }
-
-  .footer__title {
-    color: $dark-blue;
-    font-size: 1.3em;
-    font-weight: $font-weight-semi-bold;
-  }
+  //   > .footer__icon {
+  //     font-size: 2.4em;
+  //     position: relative;
+  //     animation: movement 2s infinite;
+  //   }
+  // }
 
   &__email {
     display: flex;
