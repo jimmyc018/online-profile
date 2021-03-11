@@ -6,7 +6,7 @@ import CustomNavbar from '../components/Navbar/Navbar';
 import CustomFooter from '../components/Footer/Footer';
 import LightTheme from './LightTheme';
 import DarkTheme from './DarkTheme';
-import './theme.scss';
+import './Theme.scss';
 
 const GlobalStyles = styled.div`
   background-color: ${({ theme }) => theme.backgroundColor};

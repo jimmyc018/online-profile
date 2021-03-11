@@ -7,7 +7,7 @@ import {
 import Home from './layouts/Home/Home';
 import About from './layouts/About/About';
 import ProjectOne from './layouts/ProjectOne/ProjectOne';
-import { CustomTheme } from './styles/theme';
+import { CustomTheme } from './styles/Theme';
 
 const CustomRouting = () => (
   <BrowserRouter>
@@ -16,10 +16,10 @@ const CustomRouting = () => (
         <Route exact path="/">
           <Home />
         </Route>
-        <Route exact path="/About">
+        <Route path="/About">
           <About />
         </Route>
-        <Route exact path="/ProjectOne">
+        <Route path="/ProjectOne">
           <ProjectOne />
         </Route>
       </Switch>

@@ -7,7 +7,7 @@ import ReactDOM from 'react-dom';
 
 import './index.scss';
 import reportWebVitals from './reportWebVitals';
-import CustomRouting from './routing';
+import CustomRouting from './Routing';
 
 library.add(fab, far, fas);
 
