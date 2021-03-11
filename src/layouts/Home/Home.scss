@@ -24,7 +24,7 @@
   .home__text-emphasis {
     font-style: unset;
     font-weight: $font-weight-semi-bold;
-    color: #ffc340;
+    color: $yellow;
     font-size: 1.8em;
     font-family: 'Covered By Your Grace', sans-serif;
   }
@@ -78,7 +78,7 @@
   .home__project-document-icon {
     padding-right: 15px;
     justify-content: center;
-    padding-bottom: 2px;
+    padding-bottom: 4px;
   }
 
   &__project-case {
@@ -101,7 +101,7 @@
       position: relative;
       top: -100px;
       left: 40px;
-      border-radius: 10px;
+      border-radius: 15px;
     }
   }
 
@@ -131,7 +131,7 @@
     padding: 15px 0 20px 0;
     font-size: 1.8rem;
     line-height: 22px;
-    font-family: 'Karla', sans-serif;
+    // font-family: 'Karla', sans-serif;
   }
 
   .home__project-case-content {
@@ -139,7 +139,7 @@
     font-size: 0.8rem;
     font-style: normal;
     font-weight: $font-weight-medium;
-    line-height: 30px;
+    line-height: 35px;
     padding-bottom: 20px;
   }
 
@@ -148,11 +148,12 @@
 
     .button {
       border-radius: 25px;
-      color: $dark-blue;
+      color: #8d96b2;
       font-weight: $font-weight-semi-bold;
       padding: 24px;
       text-decoration: none;
-      border-color: $dark-blue;
+      border-color: #F9F9F9;
+      background-color: #F9F9F9;
     }
   }
 

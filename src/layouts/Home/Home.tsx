@@ -2,7 +2,7 @@ import React from 'react';
 
 import './Home.scss';
 import caseOne from '../../assets/case-study-one.png';
-import document from '../../assets/document.svg';
+import document from '../../assets/down.svg';
 import { Link } from 'react-router-dom';
 import AnimateOnScrollComp, { AnimationDirection } from '../../components/AnimateOnScrollComp/AnimateOnScrollComp';
 
@@ -19,7 +19,7 @@ const Home = () => (
     {/* </AnimateOnScrollComp> */}
     <div className="home__project">
       <div className="home__project-head">
-        {/* <img src={document} alt="document-icon" loading="lazy" className="home__project-document-icon"/> */}
+        <img src={document} alt="document-icon" loading="lazy" className="home__project-document-icon"/>
         <p className="home__project-title">Featured projects</p>
         {/* <p className="home__project-link">All projects</p> */}
       </div>
