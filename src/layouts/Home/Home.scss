@@ -1,12 +1,27 @@
 @import '../../styles/variables';
 
 .home {
+
+  @media screen and (min-width: 1440px) {
+    margin: 0 100px;
+  }
+
+  @media screen and (min-width: 1903px) {
+    margin: 0;
+  }
+
   .home__greeting {
-    font-size: 3.2rem;
+    font-size: 3rem;
     font-weight: $font-weight-bold;
     color: $dark-blue;
     font-family: 'PT Serif', serif;
     margin: 120px 0 0 0;
+
+    @media screen and (min-width: 1903px) {
+      font-size: 3.8rem;
+    }
+
+
   }
 
   .home__name-link {
@@ -14,7 +29,7 @@
     margin-bottom: 0px;
     font-weight: $font-weight-bold;
     text-decoration: none;
-    font-size: 3.2rem;
+    font-size: 3.8rem;
     border-style: dotted;
     border-width: 1px 1px 4.5px;
     border-color: transparent transparent rgba(92, 92, 92, 0.21);
@@ -37,15 +52,21 @@
   .home__blockquote {
     font-style: unset;
     margin: 40px 0 0 0;
-    font-size: 1.72rem;
+    font-size: 1.4rem;
     line-height: 5rem;
-    font-weight: $font-weight-medium;
+    font-weight: $font-weight-semi-bold;
     color: $grey-white;
+    // color: #5C5C5C;
+
+    @media screen and (min-width: 1903px) {
+      font-size: 1.72rem;
+    }
+
   }
 
   &__blockquote-container {
     @media screen and (min-width: 1440px) {
-      width: 73%;
+      width: 80%;
     }
 
     @media screen and (min-width: 1903px) {
@@ -62,7 +83,6 @@
       font-size: 1.25rem;
       font-weight: $font-weight-bold;
       margin-right: 10px;
-      // font-family: 'PT Serif', serif;
     }
 
     .home__project-link {
@@ -117,11 +137,11 @@
       display: flex;
 
       .tag {
-        margin: 25px 5px 0 5px;
+        margin: 40px 5px 0 5px;
         font-size: 11.5px;
         color: $grey-blue;
         text-align: center;
-        font-weight: $font-weight-medium;
+        font-weight: $font-weight-bold;
         background-color: #F9F9F9;
         padding: 17px 15px;
         border-radius: 8px;

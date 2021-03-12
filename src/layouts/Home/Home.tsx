@@ -9,7 +9,7 @@ import AnimateOnScrollComp, { AnimationDirection } from '../../components/Animat
 const Home = () => (
   <div className="home">
     {/* <AnimateOnScrollComp direction={AnimationDirection.Right}> */}
-    <p className="home__greeting">Hello, I'm <span className="home__name-link"><a className="link_to_resume" href="https://www.dropbox.com/s/ttk8h1czez3wwsa/Jimmy%20Chan%20Resume.pdf?dl=1">Jimmy Chan</a></span>.</p>
+    <p className="home__greeting">Hi, I'm <span className="home__name-link"><a className="link_to_resume" href="https://www.dropbox.com/s/ttk8h1czez3wwsa/Jimmy%20Chan%20Resume.pdf?dl=1">Jimmy Chan</a></span>.</p>
     <div className="home__blockquote-container">
       <blockquote className="home__blockquote">
         A front-end developer who loves to explore and utilize his skills using
