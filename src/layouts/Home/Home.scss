@@ -15,10 +15,11 @@
     font-weight: $font-weight-bold;
     color: $dark-blue;
     font-family: 'PT Serif', serif;
-    margin: 120px 0 0 0;
+    margin: 100px 0 0 0;
 
     @media screen and (min-width: 1903px) {
       font-size: 3.8rem;
+      margin: 120px 0 0 0;
     }
 
 
