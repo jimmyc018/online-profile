@@ -57,10 +57,18 @@
 
   @media screen and (min-width: 1440px) {
     padding: 50px $page-gap-macbook-large;
+
+    .navbar-item {
+      font-size: 1em;
+    }
   }
 
   @media screen and (min-width: 1903px) {
     padding: 70px $page-gap-medium-large;
+
+    .navbar-item {
+      font-size: 1.25em
+    }
   }
 
 }
