@@ -34,15 +34,9 @@
     border-color: transparent transparent rgba(92, 92, 92, 0.21);
     cursor: pointer;
 
-
     @media screen and (min-width: 1903px) {
       font-size: 3.8rem;
     }
-  }
-
-  .link_to_resume {
-    text-decoration: none;
-    color: $dark-blue;
   }
 
   .home__text-emphasis {

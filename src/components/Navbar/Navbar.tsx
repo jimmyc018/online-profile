@@ -7,8 +7,8 @@ import ITheme from '../../styles/ITheme';
 import './Navbar.scss';
 
 interface IProp {
-  children: React.ReactNode,
-  themeStyle: ITheme
+  children: React.ReactNode;
+  themeStyle: ITheme;
 }
 
 interface IState {
