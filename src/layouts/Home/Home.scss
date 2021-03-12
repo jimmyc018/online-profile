@@ -29,11 +29,16 @@
     margin-bottom: 0px;
     font-weight: $font-weight-bold;
     text-decoration: none;
-    font-size: 3.8rem;
+    font-size: 3rem;
     border-style: dotted;
     border-width: 1px 1px 4.5px;
     border-color: transparent transparent rgba(92, 92, 92, 0.21);
     cursor: pointer;
+
+
+    @media screen and (min-width: 1903px) {
+      font-size: 3.8rem;
+    }
   }
 
   .link_to_resume {
