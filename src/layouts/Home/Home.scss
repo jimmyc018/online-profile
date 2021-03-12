@@ -171,6 +171,11 @@
     font-weight: $font-weight-medium;
     line-height: 35px;
     padding-bottom: 20px;
+
+
+    @media screen and (min-width: 1903px) {
+
+    }
   }
 
   .home__project-case-btn {
