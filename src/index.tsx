@@ -7,7 +7,7 @@ import ReactDOM from 'react-dom';
 import ReactGA from 'react-ga';
 
 ReactGA.initialize('UA-191970802-1');
-ReactGA.pageview(window.location.pathname + window.location.search);
+ReactGA.pageview('/');
 
 import './index.scss';
 import reportWebVitals from './reportWebVitals';
