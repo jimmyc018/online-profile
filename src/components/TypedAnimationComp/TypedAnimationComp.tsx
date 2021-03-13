@@ -3,25 +3,32 @@ import Typed from 'typed.js';
 
 export interface TypedAnimationProp {
   strings: string[];
+  typeSpeed: number;
+  backSpeed: number;
+  smartBackspace: boolean;
+  loop: boolean;
   id?: string;
   className?: string;
 }
 
 class TypedAnimationComp extends React.Component<TypedAnimationProp> {
+  static defaultProps = {
+    typeSpeed: 70,
+    backSpeed: 70,
+    smartBackspace: true,
+    loop: true
+  };
+
   private typed!: Typed;
 
-  constructor(props: TypedAnimationProp) {
-    super(props);
-  }
-
   componentDidMount() {
-    const { strings } = this.props;
+    const { strings, typeSpeed, backSpeed, smartBackspace, loop } = this.props;
     const options = {
     	strings,
-      typeSpeed: 50,
-      backSpeed: 50,
-      smartBackspace: true,
-      loop: true
+      typeSpeed,
+      backSpeed,
+      smartBackspace,
+      loop
     };
     this.typed = new Typed('.typed-animation', options);
   }

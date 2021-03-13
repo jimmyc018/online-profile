@@ -12,10 +12,12 @@
   }
 
   .navbar__heading {
-    font-size: 1em;
+    font-size: 1.25em;
     letter-spacing: 0.05em;
-    font-weight: $font-weight-bold;
-    color: $dark-blue;
+    // font-weight: $font-weight-bold;
+    font-weight: $font-weight-regular;
+    // color: $dark-blue;
+    color: $black;
   }
 
   .custom-logo {
@@ -48,7 +50,7 @@
   }
 
   @media screen and (min-width: 1024px) {
-    padding: 70px $page-gap-large;
+    padding: 60px $page-gap-large;
 
     .navbar-item {
       font-size: 1.25em;
@@ -64,7 +66,7 @@
   }
 
   @media screen and (min-width: 1903px) {
-    padding: 70px $page-gap-medium-large;
+    padding: 60px $page-gap-extra-large;
 
     .navbar-item {
       font-size: 1.25em
