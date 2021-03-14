@@ -32,10 +32,10 @@ const Home = () => (
         <p className="home__project-title">Projects I've Done</p>
       </div>
       <section className="home__project-case">
-        {/* <AnimateOnScrollComp className="home__project-case-study" id="careApp">
+        {/* <AnimateOnScrollComp className="home__project-case-study">
         </AnimateOnScrollComp> */}
         <div className="home__project-case-studies">
-          <div className="home__project-case-study" id="careApp">
+          <div className="home__project-case-study">
             <div className="home__project-case-study-content">
               <h3 className="home__project-case-study-name">The Care App</h3>
               <p className="home__project-case-study-type">UX Design</p>
@@ -43,13 +43,13 @@ const Home = () => (
             <img src={caseOne} alt='Case Study One' loading="eager"/>
           </div>
 
-          {/* <div className="home__project-case-study" id="careApp">
+          <div className="home__project-case-study">
             <div className="home__project-case-study-content">
               <h3 className="home__project-case-study-name">Pokédex</h3>
               <p className="home__project-case-study-type">Coming Soon</p>
             </div>
             <img src={caseTwo} alt='Case Study Two' loading="eager"/>
-          </div> */}
+          </div>
         </div>
         {/* <div className="home__project-case-mini-area">
           <AnimateOnScrollComp className="home__project-case-desc">
