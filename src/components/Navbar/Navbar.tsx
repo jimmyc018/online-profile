@@ -61,7 +61,7 @@ class CustomNavbar extends React.Component<IProp, IState> {
       >
         <div className="navbar-brand">
           <Link className="navbar-item custom-logo" to="/">
-            <h3 className="navbar__heading">Jimmy Chan</h3>
+            <h3 className="navbar__heading"><span id="logo_Navbar">Jimmy</span> Chan</h3>
           </Link>
 
           <a

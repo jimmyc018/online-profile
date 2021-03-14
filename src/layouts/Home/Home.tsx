@@ -1,7 +1,7 @@
 import React from 'react';
 
 import './Home.scss';
-import caseOne from '../../assets/case-study-one.png';
+import caseOne from '../../assets/case-study-one0.png';
 import caseTwo from '../../assets/case-study-two.png';
 import document from '../../assets/down.svg';
 import { Link } from 'react-router-dom';
@@ -27,10 +27,10 @@ const Home = () => (
     <p className="home_location">📍 Sydney, NSW</p>
     {/* </AnimateOnScrollComp> */}
     <div className="home__project">
-      <div className="home__project-head">
+      {/* <div className="home__project-head">
         <img src={document} alt="document-icon" loading="lazy" className="home__project-document-icon"/>
         <p className="home__project-title">Projects I've Done</p>
-      </div>
+      </div> */}
       <section className="home__project-case">
         {/* <AnimateOnScrollComp className="home__project-case-study">
         </AnimateOnScrollComp> */}
@@ -43,13 +43,13 @@ const Home = () => (
             <img src={caseOne} alt='Case Study One' loading="eager"/>
           </div>
 
-          <div className="home__project-case-study">
+          {/* <div className="home__project-case-study">
             <div className="home__project-case-study-content">
               <h3 className="home__project-case-study-name">Pokédex</h3>
               <p className="home__project-case-study-type">Coming Soon</p>
             </div>
             <img src={caseTwo} alt='Case Study Two' loading="eager"/>
-          </div>
+          </div> */}
         </div>
         {/* <div className="home__project-case-mini-area">
           <AnimateOnScrollComp className="home__project-case-desc">

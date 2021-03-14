@@ -12,12 +12,9 @@
 
   .home__greeting {
     font-size: 3rem;
-    font-weight: $font-weight-regular;
+    font-weight: $font-weight-bold;
     color: $black;
     margin: 100px 0 0 0;
-    // font-weight: $font-weight-bold;
-    // color: $dark-blue;
-    // font-family: 'PT Serif', serif;
 
     @media screen and (min-width: 1903px) {
       font-size: 3.8rem;
@@ -25,7 +22,7 @@
   }
 
   .home_location {
-    color: #2B2B2B;
+    color: $black;
     font-size: 1.3rem;
     font-weight: $font-weight-semi-bold;
     margin-top: 1.8rem;
@@ -36,15 +33,12 @@
 
     color: $black;
     margin-bottom: 0px;
-    font-weight: $font-weight-regular;
+    font-weight: $font-weight-bold;
     text-decoration: none;
     font-size: 3rem;
     border-width: 1px 1px 4.5px;
     border-color: transparent transparent rgba(92, 92, 92, 0.21);
     cursor: pointer;
-    // color: $dark-blue;
-    // font-weight: $font-weight-bold;
-    // border-style: dotted;
 
     @media screen and (min-width: 1903px) {
       font-size: 3.8rem;
@@ -60,8 +54,6 @@
     border-width: 1px 1px 4.5px;
     border-color: transparent transparent rgba(92, 92, 92, 0.21);
     cursor: pointer;
-    // color: $dark-blue;
-    // font-weight: $font-weight-bold;
     border-style: dotted;
 
     @media screen and (min-width: 1903px) {
@@ -77,10 +69,6 @@
     font-weight: $font-weight-light;
     color: #5C5C5C;
     font-size: 1.65rem;
-    // font-weight: $font-weight-semi-bold;
-    // font-size: 1.8rem;
-    // color: $yellow;
-    // font-family: 'Covered By Your Grace', sans-serif;
   }
 
     .home__text-emphasis {
@@ -88,10 +76,6 @@
     font-weight: $font-weight-light;
     color: #5C5C5C;
     font-size: 1.65rem;
-    // font-weight: $font-weight-semi-bold;
-    // font-size: 1.8rem;
-    // color: $yellow;
-    // font-family: 'Covered By Your Grace', sans-serif;
   }
 
   .home__blockquote {
@@ -101,15 +85,12 @@
     line-height: 3.3rem;
     color: #5C5C5C;
     font-weight: $font-weight-light;
-    // line-height: 5rem;
-    // font-weight: $font-weight-semi-bold;
-    // color: $grey-white;
+
     @media screen and (min-width: 1440px) {
       width: 65%;
     }
 
     @media screen and (min-width: 1903px) {
-      // width: 65%;
       width: 70%;
     }
     // @media screen and (min-width: 1903px) {
@@ -155,7 +136,7 @@
   }
 
   &__project-case {
-    margin: 50px 0 250px 0;
+    margin: 150px 0 250px 0;
   }
 
   &__project-case-mini-area {
@@ -204,7 +185,6 @@
     padding: 15px 0 20px 0;
     font-size: 1.8rem;
     line-height: 22px;
-    // font-family: 'Karla', sans-serif;
   }
 
   .home__project-case-content {
@@ -310,7 +290,7 @@
 
     &:hover {
       img {
-        /*filter: grayscale(100%);*/
+        // filter: grayscale(100%);
         opacity: 0.15;
         transform: scale(1.02);
         transform-origin: 50% 50%;
