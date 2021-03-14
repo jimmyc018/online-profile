@@ -24,12 +24,12 @@ const Home = () => (
       A <span className="home__name-link-2">creative</span> individualist who loves to explore and utilize his skills using
       a variety of skillsets to solve <span className="home__text-emphasis">real-life challenges</span>, while also adding value.
     </blockquote>
+    <p className="home_location">📍 Sydney, NSW</p>
     {/* </AnimateOnScrollComp> */}
     <div className="home__project">
       <div className="home__project-head">
         <img src={document} alt="document-icon" loading="lazy" className="home__project-document-icon"/>
         <p className="home__project-title">Projects I've Done</p>
-        {/* <p className="home__project-link">All projects</p> */}
       </div>
       <section className="home__project-case">
         {/* <AnimateOnScrollComp className="home__project-case-study" id="careApp">
@@ -42,6 +42,7 @@ const Home = () => (
             </div>
             <img src={caseOne} alt='Case Study One' loading="eager"/>
           </div>
+
           {/* <div className="home__project-case-study" id="careApp">
             <div className="home__project-case-study-content">
               <h3 className="home__project-case-study-name">Pokédex</h3>

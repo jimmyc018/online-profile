@@ -24,6 +24,14 @@
     }
   }
 
+  .home_location {
+    color: #2B2B2B;
+    font-size: 1.3rem;
+    font-weight: $font-weight-semi-bold;
+    margin-top: 1.8rem;
+    letter-spacing: 0.1rem;
+  }
+
   .home__name-link {
 
     color: $black;
@@ -44,7 +52,6 @@
   }
 
   .home__name-link-2 {
-
     color: $black;
     margin-bottom: 0px;
     font-weight: $font-weight-regular;
@@ -116,9 +123,8 @@
 
     .home__project-title {
       color: $grey-white;
-      // color: $black;
       font-size: 1.2rem;
-      font-weight: $font-weight-medium;
+      font-weight: $font-weight-semi-bold;
       font-family: "sofia-pro", sans-serif;
       margin-right: 10px;
     }

@@ -5,7 +5,7 @@ const LightTheme: ITheme = {
   color: '#000000',
   navbarTextColor: '#C4C4C4',
   // navbarActiveTextColor: '#FFC340'
-  navbarActiveTextColor: '#000000'
+  navbarActiveTextColor: '#292929'
 }
 
 export default LightTheme;
