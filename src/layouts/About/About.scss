@@ -8,11 +8,16 @@
   .about__heading {
     font-weight: $font-weight-bold;
     font-family: 'Lato', sans-serif;
-    font-size: 4.5rem;
+    font-size: 3.5rem;
     line-height: 40px;
     margin-bottom: 1em;
     max-width: 600px;
     color: $black;
+
+    @media screen and (min-width: 1903px) {
+      font-size: 4.5rem;
+    }
+
   }
 
   .about__experience-heading {
@@ -78,10 +83,15 @@
   }
 
   .about__status-favourite {
-    margin: 0 60px 0 0;
-    font-size: 1.2rem;
+    margin: 0 20px 0 0;
+    font-size: 1.1rem;
     max-width: 610px;
     font-weight: $font-weight-medium;
+
+    @media screen and (min-width: 1903px) {
+      font-size: 1.2rem;
+      margin: 0 60px 0 0;
+    }
   }
 
   .about__resume-link {

@@ -1,7 +1,7 @@
 import React from 'react';
 
 import './Home.scss';
-import caseOne from '../../assets/case-study-one1.png';
+import caseOne from '../../assets/case-study-two.png';
 import caseTwo from '../../assets/case-study-two.png';
 import document from '../../assets/down.svg';
 import { Link } from 'react-router-dom';
@@ -49,6 +49,13 @@ const Home = () => (
             </div> */}
           </div>
 
+          <div className="home__project-case-study-img-container">
+              <div className="home__project-case-study-content">
+                <h3 className="home__project-case-study-name">Care App</h3>
+                <p className="home__project-case-study-type">User Research</p>
+              </div>
+              <Link to="/ProjectOne"><img src={caseOne} alt='Case Study One' loading="eager"/></Link>
+          </div>
         </div>
         {/* <div className="home__project-case-mini-area">
           <AnimateOnScrollComp className="home__project-case-desc">
