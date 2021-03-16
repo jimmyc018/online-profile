@@ -190,20 +190,21 @@
   }
 
   .home__project-case-study-name {
-    font-size: 2.2rem;
+    font-size: 2rem;
     font-weight: $font-weight-bold;
-    // font-family: 'Spartan', sans-serif;
+    font-family: 'Lato', sans-serif;
     margin-top: 1em;
     letter-spacing: 0.1rem;
-    color: $black;
+    color: #505050;
   }
 
   .home__project-case-study-type {
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: #5a5a5a;
-    margin-top: 0.8rem;
+    margin-top: 0.6rem;
     line-height: 1.9rem;
     text-align: justify;
+    font-family: "Lato", sans-serif;
   }
 
   .home__project-case-btn {
@@ -237,7 +238,6 @@
     display: grid;
     grid-template-columns: auto;
     gap: 24px 24px;
-    // justify-items: center;
 
     @media screen and (min-width: 1024px) {
       grid-template-columns: auto auto;
@@ -278,37 +278,37 @@
       transition: transform 0.3s, opacity 0.3s ease-in-out;
     }
 
-    // &-content {
-    //   display: flex;
-    //   flex-direction: column;
-    //   align-items: center;
-    //   justify-content: center;
-    //   position: absolute;
-    //   opacity: 0;
-    //   transition: opacity 0.3s ease-in-out;
-    //   height: inherit;
-    //   width: calc(100% - 50px);
+    .home__project-case-study-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+      height: inherit;
+      width: calc(100% - 50px);
 
-    //   @media screen and (min-width: 1024px) {
-    //     width: 450px;
-    //   }
+      @media screen and (min-width: 1024px) {
+        width: 450px;
+      }
 
-    //   @media screen and (min-width: 1224px) {
-    //     width: 550px;
-    //   }
-    // }
+      @media screen and (min-width: 1224px) {
+        width: 550px;
+      }
+    }
 
     &:hover {
       img {
         // filter: grayscale(100%);
-        // opacity: 0.15;
+        opacity: 0.15;
         transform: scale(1.10);
         transform-origin: 50% 50%;
       }
 
-      // .home__project-case-study-content {
-      //   opacity: 1;
-      // }
+      .home__project-case-study-content {
+        opacity: 1;
+      }
     }
   }
 }

@@ -37,27 +37,17 @@ const Home = () => (
         <div className="home__project-case-studies">
           <div className="home__project-case-study">
             <div className="home__project-case-study-img-container">
-              <Link to="/"><img src={caseOne} alt='Case Study One' loading="eager"/></Link>
+              <div className="home__project-case-study-content">
+                <h3 className="home__project-case-study-name">Care App</h3>
+                <p className="home__project-case-study-type">User Research</p>
+              </div>
+              <Link to="/ProjectOne"><img src={caseOne} alt='Case Study One' loading="eager"/></Link>
             </div>
-            <div>
-              <h3 className="home__project-case-study-name">Care App</h3>
+            {/* <div>
               <p className="home__project-case-study-type">Care is an iOS and Andriod platform to help reduce wait time and increase better user
             experience for patients by also assisting practitioners to save valuable time they require.</p>
-              {/* <div className="home__project-case-tags">
-                <span className="tag">Mobile App</span>
-                <span className="tag">UX Research</span>
-                <span className="tag">Health</span>
-              </div> */}
-            </div>
+            </div> */}
           </div>
-
-          {/* <div className="home__project-case-study">
-            <div className="home__project-case-study-content">
-              <h3 className="home__project-case-study-name">Pokédex</h3>
-              <p className="home__project-case-study-type">Coming Soon</p>
-            </div>
-            <img src={caseTwo} alt='Case Study Two' loading="eager"/>
-          </div> */}
 
         </div>
         {/* <div className="home__project-case-mini-area">

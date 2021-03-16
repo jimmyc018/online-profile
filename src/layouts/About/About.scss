@@ -6,33 +6,48 @@
   }
 
   .about__heading {
-    font-style: normal;
-    font-family: 'PT Serif', serif;
     font-weight: $font-weight-bold;
+    font-family: 'Lato', sans-serif;
     font-size: 4.5rem;
     line-height: 40px;
     margin-bottom: 1em;
     max-width: 600px;
-    color: $dark-blue;
+    color: $black;
+  }
+
+  .about__experience-heading {
+    font-weight: $font-weight-bold;
+    font-family: 'Lato', sans-serif;
+    font-size: 2.4rem;
+    line-height: 40px;
+    margin-bottom: 1em;
+    max-width: 600px;
+    color: $black;
+  }
+
+  .about__experience-company {
+    font-weight: $font-weight-medium;
+    font-size: 1.5rem;
+    max-width: 600px;
   }
 
   .about__description-one {
-    font-size: 0.9em;
+    font-size: 1.2em;
     font-style: normal;
     margin: 3em 0 0 0;
     text-align: justify;
-    max-width: 650px;
-    line-height: 2.5rem;
+    max-width: 610px;
+    line-height: 3rem;
     font-weight: $font-weight-medium;
   }
 
   .about__description-two {
-    font-size: 0.9em;
+    font-size: 1.2em;
     font-style: normal;
     margin: 0 0 2em 0;
     text-align: justify;
-    max-width: 650px;
-    line-height: 2.5rem;
+    max-width: 610px;
+    line-height: 3rem;
     font-weight: $font-weight-medium;
   }
 
@@ -57,23 +72,29 @@
     cursor: pointer;
   }
 
+  .about__status {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .about__status-favourite {
+    margin: 0 60px 0 0;
+    font-size: 1.2rem;
+    max-width: 610px;
+    font-weight: $font-weight-medium;
+  }
+
   .about__resume-link {
-    border-radius: 15px;
-    border: 2px solid $dark-blue;
-    color: $dark-blue;
+    border-radius: 16px;
+    border: 2.8px solid $black;
+    color: $black;
+    font-size: 1.1rem;
     font-weight: $font-weight-semi-bold;
-    padding: 25px;
+    padding: 24px 30px 24px 30px;
     text-decoration: none;
     margin-bottom: 100px;
     margin-top: 15px;
-    max-width: 650px;
-  }
-
-  .about__resume-link:hover {
-    background-color: $dark-blue;
-    color: $white;
-    border: none;
-    border-color: white;
+    max-width: 610px;
   }
 
 }
