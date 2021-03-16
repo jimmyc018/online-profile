@@ -12,12 +12,12 @@
 
   .home__greeting {
     font-size: 3rem;
-    font-weight: $font-weight-bold;
+    font-weight: $font-weight-semi-bold;
     color: $black;
     margin: 100px 0 0 0;
 
     @media screen and (min-width: 1903px) {
-      font-size: 3.8rem;
+      font-size: 4rem;
     }
   }
 
@@ -25,15 +25,14 @@
     color: $black;
     font-size: 1.3rem;
     font-weight: $font-weight-semi-bold;
-    margin-top: 1.8rem;
+    margin-top: 2rem;
     letter-spacing: 0.1rem;
   }
 
   .home__name-link {
-
     color: $black;
     margin-bottom: 0px;
-    font-weight: $font-weight-bold;
+    font-weight: $font-weight-semi-bold;
     text-decoration: none;
     font-size: 3rem;
     border-width: 1px 1px 4.5px;
@@ -41,39 +40,33 @@
     cursor: pointer;
 
     @media screen and (min-width: 1903px) {
-      font-size: 3.8rem;
+      font-size: 4rem;
     }
   }
 
-  .home__name-link-2 {
-    color: $black;
-    margin-bottom: 0px;
-    font-weight: $font-weight-regular;
-    text-decoration: none;
-    font-size: 1.65rem;
-    border-width: 1px 1px 4.5px;
-    border-color: transparent transparent rgba(92, 92, 92, 0.21);
-    cursor: pointer;
-    border-style: dotted;
+  .home__bio {
+    margin-bottom: 150px;
+  }
 
-    @media screen and (min-width: 1903px) {
-      font-size: 1.65rem;
-      color: $dark-blue;
-      font-weight: $font-weight-semi-bold;
-      font-style: unset;
-    }
+  .home__bio-lets-chat{
+    color: #212121;
+    // font-family: "Nunito Sans", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 1.9rem;
+    margin: 50px 0 40px 0;
+  }
+
+  .home__shoot-me-message {
+    color: #5C5C5C;
+    text-decoration: none;
+    font-size: 1.6rem;
+    letter-spacing: 0.05rem;
+    font-weight: $font-weight-semi-bold;
   }
 
   .home__text-emphasis {
     font-style: unset;
-    font-weight: $font-weight-light;
-    color: #5C5C5C;
-    font-size: 1.65rem;
-  }
-
-    .home__text-emphasis {
-    font-style: unset;
-    font-weight: $font-weight-light;
+    font-weight: $font-weight-regular;
     color: #5C5C5C;
     font-size: 1.65rem;
   }
@@ -82,9 +75,9 @@
     font-style: unset;
     margin: 40px 0 0 0;
     font-size: 1.65rem;
-    line-height: 3.3rem;
+    line-height: 3.5rem;
     color: #5C5C5C;
-    font-weight: $font-weight-light;
+    font-weight: $font-weight-regular;
 
     @media screen and (min-width: 1440px) {
       width: 65%;
@@ -103,10 +96,10 @@
     flex-direction: column;
 
     .home__project-title {
-      color: #505050;
-      font-size: 1.2rem;
-      font-weight: $font-weight-semi-bold;
-      font-family: "sofia-pro", sans-serif;
+      color: #000000;
+      font-size: 1.3rem;
+      font-weight: $font-weight-bold;
+      // font-family: "sofia-pro", sans-serif;
       margin-right: 10px;
     }
 
@@ -117,7 +110,7 @@
     }
   }
 
-  &__project-head {
+  .home__project-head {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -136,7 +129,7 @@
   }
 
   &__project-case {
-    margin: 150px 0 250px 0;
+    margin: 190px 0 250px 0;
   }
 
   &__project-case-mini-area {
@@ -166,11 +159,11 @@
       display: flex;
 
       .tag {
-        margin: 40px 5px 0 5px;
+        margin: 15px 5px 0 0;
         font-size: 11.5px;
         color: $grey-blue;
         text-align: center;
-        font-weight: $font-weight-bold;
+        font-weight: $font-weight-semi-bold;
         background-color: #F9F9F9;
         padding: 17px 15px;
         border-radius: 8px;
@@ -197,15 +190,20 @@
   }
 
   .home__project-case-study-name {
-    font-size: 2rem;
-    font-weight: $font-weight-semi-bold;
+    font-size: 2.2rem;
+    font-weight: $font-weight-bold;
+    // font-family: 'Spartan', sans-serif;
+    margin-top: 1em;
     letter-spacing: 0.1rem;
-    color: #5A5A5A;
+    color: $black;
   }
 
   .home__project-case-study-type {
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: #5a5a5a;
+    margin-top: 0.8rem;
+    line-height: 1.9rem;
+    text-align: justify;
   }
 
   .home__project-case-btn {
@@ -247,7 +245,19 @@
   }
 
   &__project-case-study {
-    border-radius: 0.8rem;
+    width: 100%;
+
+    @media screen and (min-width: 1024px) {
+      width: 450px;
+    }
+
+    @media screen and (min-width: 1224px) {
+      width: 550px;
+    }
+  }
+
+  &__project-case-study-img-container {
+    // border-radius: 0.7rem;
     overflow: hidden;
     width: 100%;
 
@@ -268,37 +278,37 @@
       transition: transform 0.3s, opacity 0.3s ease-in-out;
     }
 
-    &-content {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      position: absolute;
-      opacity: 0;
-      transition: opacity 0.3s ease-in-out;
-      height: inherit;
-      width: calc(100% - 50px);
+    // &-content {
+    //   display: flex;
+    //   flex-direction: column;
+    //   align-items: center;
+    //   justify-content: center;
+    //   position: absolute;
+    //   opacity: 0;
+    //   transition: opacity 0.3s ease-in-out;
+    //   height: inherit;
+    //   width: calc(100% - 50px);
 
-      @media screen and (min-width: 1024px) {
-        width: 450px;
-      }
+    //   @media screen and (min-width: 1024px) {
+    //     width: 450px;
+    //   }
 
-      @media screen and (min-width: 1224px) {
-        width: 550px;
-      }
-    }
+    //   @media screen and (min-width: 1224px) {
+    //     width: 550px;
+    //   }
+    // }
 
     &:hover {
       img {
         // filter: grayscale(100%);
-        opacity: 0.15;
-        transform: scale(1.02);
+        // opacity: 0.15;
+        transform: scale(1.10);
         transform-origin: 50% 50%;
       }
 
-      .home__project-case-study-content {
-        opacity: 1;
-      }
+      // .home__project-case-study-content {
+      //   opacity: 1;
+      // }
     }
   }
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 
 import './Home.scss';
-import caseOne from '../../assets/case-study-one0.png';
+import caseOne from '../../assets/case-study-one1.png';
 import caseTwo from '../../assets/case-study-two.png';
 import document from '../../assets/down.svg';
 import { Link } from 'react-router-dom';
@@ -13,15 +13,15 @@ const Home = () => (
     {/* <AnimateOnScrollComp direction={AnimationDirection.Right}> */}
     <p className="home__greeting">
       Hi, I'm <TypedAnimationComp strings={[
-        'Jimmy Chan.',
+        'Jimmy Chan!',
         'a UX Designer',
         'a Data Analyst',
-        'a Frontend Developer'
+        'a UI Developer'
       ]} className="home__name-link">
       </TypedAnimationComp>
     </p>
     <blockquote className="home__blockquote">
-      A <span className="home__name-link-2">creative</span> individualist who loves to explore and utilize his skills using
+      A creative individualist who loves to explore and utilize his skills using
       a variety of skillsets to solve <span className="home__text-emphasis">real-life challenges</span>, while also adding value.
     </blockquote>
     <p className="home_location">📍 Sydney, NSW</p>
@@ -36,11 +36,19 @@ const Home = () => (
         </AnimateOnScrollComp> */}
         <div className="home__project-case-studies">
           <div className="home__project-case-study">
-            <div className="home__project-case-study-content">
-              <h3 className="home__project-case-study-name">The Care App</h3>
-              <p className="home__project-case-study-type">UX Design</p>
+            <div className="home__project-case-study-img-container">
+              <Link to="/"><img src={caseOne} alt='Case Study One' loading="eager"/></Link>
             </div>
-            <img src={caseOne} alt='Case Study One' loading="eager"/>
+            <div>
+              <h3 className="home__project-case-study-name">Care App</h3>
+              <p className="home__project-case-study-type">Care is an iOS and Andriod platform to help reduce wait time and increase better user
+            experience for patients by also assisting practitioners to save valuable time they require.</p>
+              {/* <div className="home__project-case-tags">
+                <span className="tag">Mobile App</span>
+                <span className="tag">UX Research</span>
+                <span className="tag">Health</span>
+              </div> */}
+            </div>
           </div>
 
           {/* <div className="home__project-case-study">
@@ -50,6 +58,7 @@ const Home = () => (
             </div>
             <img src={caseTwo} alt='Case Study Two' loading="eager"/>
           </div> */}
+
         </div>
         {/* <div className="home__project-case-mini-area">
           <AnimateOnScrollComp className="home__project-case-desc">
@@ -69,6 +78,10 @@ const Home = () => (
         </div> */}
       </section>
     </div>
+    {/* <section className="home__bio">
+        <h3 className="home__bio-lets-chat">Want to know more about me? Let's have a chat 💬?</h3>
+        <a href="mailto:jimmychan018@gmail.com" className="home__shoot-me-message">Send me a message ✉️</a>
+    </section> */}
   </div>
 );
 

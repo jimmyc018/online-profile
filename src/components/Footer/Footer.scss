@@ -5,50 +5,39 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 120px $page-gap-small;
+  padding: 65px $page-gap-small;
+  background-color: $white;
 
   @media screen and (min-width: 1024px) {
-    padding: 120px $page-gap-large;
+    padding: 65px $page-gap-large;
   }
 
   @media screen and (min-width: 1440px) {
-    padding: 120px $page-gap-extra-large;
+    padding: 65px $page-gap-extra-large;
   }
 
   @media screen and (min-width: 1903px) {
-    padding: 120px $page-gap-medium-large;
+    padding: 65px $page-gap-medium-large;
   }
 
   .footer__text {
-    color: $black;
-    font-weight: $font-weight-medium;
+    color: #757575;
+    letter-spacing: 1px;;
+    font-size: 0.9rem;
+    font-weight: $font-weight-bold;
   }
-
-  // &__left-area {
-  //   display: flex;
-  //   align-items: center;
-
-  //   > .footer__icon {
-  //     font-size: 2.4em;
-  //     position: relative;
-  //     animation: movement 2s infinite;
-  //   }
-  // }
 
   &__email {
     display: flex;
     flex-direction: row;
     align-items: center;
     margin-top: 20px;
+    margin-bottom: 16px;
 
     .footer__icon {
       color: $black;
-      font-size: 2em;
-    }
-
-    .footer__linkedin {
-      color: #6487ff;
-      font-size: 2em;
+      margin-bottom: 0.5rem;
+      font-size: 1.625rem;
     }
 
     .footer__text {
@@ -56,7 +45,7 @@
     }
 
     .footer__padding {
-      margin-left: 30px;
+      margin-left: 25px;
     }
   }
 }
