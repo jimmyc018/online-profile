@@ -27,11 +27,10 @@ const About = () => (
         </div>
       </div>
     </div>
-    <div className="about__experience">
+    {/* <div className="about__experience">
       <h3 className="about__experience-heading">My Experience</h3>
       <p className="about__experience-company">Westpac Group</p>
-
-    </div>
+    </div> */}
   </div>
 );
 

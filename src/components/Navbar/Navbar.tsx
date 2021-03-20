@@ -9,6 +9,7 @@ import './Navbar.scss';
 interface IProp {
   children: React.ReactNode;
   themeStyle: ITheme;
+  isProjectOne: boolean;
 }
 
 interface IState {
@@ -39,7 +40,7 @@ class CustomNavbar extends React.Component<IProp, IState> {
   };
 
   render() {
-    const { children, themeStyle } = this.props;
+    const { children, themeStyle, isProjectOne } = this.props;
     const { isOpen, width } = this.state;
     const NavbarEnd = styled.div`
       .navbar-item {
@@ -55,7 +56,7 @@ class CustomNavbar extends React.Component<IProp, IState> {
         role="navigation"
         aria-label="main navigation"
         style={{
-          backgroundColor: themeStyle.backgroundColor,
+          backgroundColor: isProjectOne ? 'transparent' : themeStyle.backgroundColor,
           color: themeStyle.color
         }}
       >
@@ -80,10 +81,13 @@ class CustomNavbar extends React.Component<IProp, IState> {
         <div
           id="navbarMenu"
           className={`navbar-menu ${isOpen || width > 1024 ? 'is-active' : ''}`}
-          style={{backgroundColor: themeStyle.backgroundColor}}
+          style={{backgroundColor: isProjectOne ? 'transparent' : themeStyle.backgroundColor}}
         >
           <NavbarEnd className="navbar-end">
-            <div className="navbar-item navbar__spacing" style={{backgroundColor: themeStyle.backgroundColor}}>
+            <div
+              className="navbar-item navbar__spacing"
+              style={{backgroundColor: isProjectOne ? 'transparent' : themeStyle.backgroundColor}}
+            >
               <NavLink
                 exact
                 to="/"
@@ -96,7 +100,10 @@ class CustomNavbar extends React.Component<IProp, IState> {
                 Work
               </NavLink>
             </div>
-            <div className="navbar-item navbar__spacing" style={{backgroundColor: themeStyle.backgroundColor}}>
+            <div
+              className="navbar-item navbar__spacing"
+              style={{backgroundColor: isProjectOne ? 'transparent' : themeStyle.backgroundColor}}
+            >
               <NavLink
                 to="/About"
                 style={{color: themeStyle.navbarTextColor}}
@@ -108,7 +115,7 @@ class CustomNavbar extends React.Component<IProp, IState> {
                 About
               </NavLink>
             </div>
-            {/* <div className="navbar-item" style={{backgroundColor: themeStyle.backgroundColor}}>
+            {/* <div className="navbar-item" style={{backgroundColor: isProjectOne ? 'transparent' : themeStyle.backgroundColor}}>
               <a href="https://www.dropbox.com/s/ttk8h1czez3wwsa/Jimmy%20Chan%20Resume.pdf?dl=1" style={{color: themeStyle.navbarTextColor}}>Resume</a>
             </div> */}
             {/* <div className="navbar-item">{children}</div> */}

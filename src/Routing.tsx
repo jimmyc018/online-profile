@@ -7,7 +7,7 @@ import {
 import Home from './layouts/Home/Home';
 import About from './layouts/About/About';
 import ProjectOne from './layouts/ProjectOne/ProjectOne';
-import { CustomTheme } from './styles/Theme';
+import CustomTheme from './styles/Theme';
 
 const CustomRouting = () => (
   <BrowserRouter>

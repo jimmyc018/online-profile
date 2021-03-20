@@ -1,11 +1,11 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import styled, { ThemeProvider } from 'styled-components';
+import { withRouter } from 'react-router';
 
 import CustomNavbar from '../components/Navbar/Navbar';
 import CustomFooter from '../components/Footer/Footer';
 import LightTheme from './LightTheme';
-import DarkTheme from './DarkTheme';
 import './Theme.scss';
 
 const GlobalStyles = styled.div`
@@ -16,17 +16,13 @@ const GlobalStyles = styled.div`
   }
 `;
 
-interface IProp {
-  children: React.ReactNode;
-}
-
 interface IState {
   currentTheme: string;
   displayScrollBtn: boolean;
 }
 
-export class CustomTheme extends React.Component<IProp, IState> {
-  constructor(props: IProp) {
+class CustomTheme extends React.Component<any, IState> {
+  constructor(props: any) {
     super(props);
     this.state = { currentTheme: 'light', displayScrollBtn: false };
   }
@@ -39,7 +35,7 @@ export class CustomTheme extends React.Component<IProp, IState> {
     document.removeEventListener("scroll", this.handleScroll);
   }
 
-  toggleTheme = () => this.setState(state => ({ currentTheme: state.currentTheme === 'light' ? 'dark' : 'light' }));
+  toggleTheme = () => this.setState(state => ({ currentTheme: 'light' }));
 
   handleScroll = () => {
     const rootElement = document.documentElement;
@@ -60,27 +56,34 @@ export class CustomTheme extends React.Component<IProp, IState> {
   };
 
   render() {
-    const { children } = this.props;
+    const { children, location } = this.props;
     const { currentTheme, displayScrollBtn } = this.state;
 
     return (
-      <ThemeProvider theme={currentTheme === 'light' ? LightTheme : DarkTheme}>
+      <ThemeProvider theme={LightTheme}>
         <GlobalStyles>
-          <CustomNavbar themeStyle={currentTheme === 'light' ? LightTheme : DarkTheme}>
-            {/* <button
-              className="button"
-              onClick={this.toggleTheme}
-              style={{
-                backgroundColor: currentTheme === 'light' ? LightTheme.backgroundColor : DarkTheme.backgroundColor,
-                color: currentTheme === 'light' ? LightTheme.color : DarkTheme.color,
-                borderRadius: '50%',
-                borderWidth: 2,
-                height: '50px'
-              }}
-            >
-              <FontAwesomeIcon icon={currentTheme === 'light' ? ['fas', 'sun'] : ['fas', 'moon']}></FontAwesomeIcon>
-            </button> */}
-          </CustomNavbar>
+          <div
+            className="bg-img"
+            style={{
+              height: location.pathname === '/ProjectOne' ? '100vh' : 'auto'
+            }}
+          >
+            <CustomNavbar themeStyle={LightTheme} isProjectOne={location.pathname === '/ProjectOne'}>
+              {/* <button
+                className="button"
+                onClick={this.toggleTheme}
+                style={{
+                  backgroundColor: LightTheme.backgroundColor,
+                  color: LightTheme.color,
+                  borderRadius: '50%',
+                  borderWidth: 2,
+                  height: '50px'
+                }}
+              >
+                <FontAwesomeIcon icon={['fas', 'sun']}></FontAwesomeIcon>
+              </button> */}
+            </CustomNavbar>
+          </div>
           <main role="main" className="page-content">
             {children}
             <button
@@ -96,3 +99,5 @@ export class CustomTheme extends React.Component<IProp, IState> {
     );
   }
 }
+
+export default withRouter(CustomTheme);
