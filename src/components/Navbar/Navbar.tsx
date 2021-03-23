@@ -62,7 +62,7 @@ class CustomNavbar extends React.Component<IProp, IState> {
       >
         <div className="navbar-brand">
           <Link className="navbar-item custom-logo" to="/">
-            <h3 className="navbar__heading"><span id="logo_Navbar">Jimmy</span> Chan</h3>
+            <h3 className="navbar__heading"><span id="logo_Navbar">jimmy</span> chan</h3>
           </Link>
 
           <a
@@ -97,7 +97,7 @@ class CustomNavbar extends React.Component<IProp, IState> {
                   fontWeight: 600
                 }}
               >
-                Work
+                work
               </NavLink>
             </div>
             <div
@@ -112,7 +112,7 @@ class CustomNavbar extends React.Component<IProp, IState> {
                   fontWeight: 600
                 }}
               >
-                About
+                about
               </NavLink>
             </div>
             {/* <div className="navbar-item" style={{backgroundColor: isProjectOne ? 'transparent' : themeStyle.backgroundColor}}>

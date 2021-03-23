@@ -1,7 +1,7 @@
 import React from 'react';
 
 import './Home.scss';
-import caseOne from '../../assets/case-study-one1.png';
+import caseOne from '../../assets/Shot1.png';
 import { Link } from 'react-router-dom';
 import AnimateOnScrollComp, { AnimationDirection } from '../../components/AnimateOnScrollComp/AnimateOnScrollComp';
 import TypedAnimationComp from '../../components/TypedAnimationComp/TypedAnimationComp';
@@ -20,8 +20,8 @@ const Home = () => (
       </TypedAnimationComp>
     </p>
     <blockquote className="home__blockquote">
-      A creative individualist who loves to explore and utilize his skills using
-      a variety of skillsets to solve <span className="home__text-emphasis">real-life challenges</span>, while also adding value.
+      A <span className="home__text-emphasis">creative individualist</span> who loves to explore and utilize his skills using
+      a variety of skillsets to solve real-life challenges, while also adding value.
     </blockquote>
     <p className="home__lets-talk"><a href="mailto:jimmychan018@gmail.com" id="home__lets-talk">Let's work together →</a></p>
     {/* </AnimateOnScrollComp> */}
@@ -36,17 +36,22 @@ const Home = () => (
         <div className="home__project-case-studies">
           <div className="home__project-case-study">
             <div className="home__project-case-study-img-container">
-              <div className="home__project-case-study-content">
+              {/* <div className="home__project-case-study-content">
                 <h3 className="home__project-case-study-name">Care App</h3>
                 <p className="home__project-case-study-type">User Research</p>
-              </div>
+              </div> */}
               <Link to="/ProjectOne"><img src={caseOne} alt='Case Study One' loading="lazy"/></Link>
             </div>
-            {/* <div>
+            <div>
+              <p className="home__project-case-study-1">The Care App</p>
+              <p className="home__project-case-study-2">UX + UI</p>
+            </div>
+          </div>
+
+          {/* <div>
               <p className="home__project-case-study-type">Care is an iOS and Andriod platform to help reduce wait time and increase better user
             experience for patients by also assisting practitioners to save valuable time they require.</p>
-            </div> */}
-          </div>
+          </div> */}
 {/*
           <div className="home__project-case-study-img-container">
               <div className="home__project-case-study-content">
