@@ -49,10 +49,10 @@ const Home = () => (
             <div className="home__project-case-btn">
                 <Link className="button disabled-link" to="/ProjectOne" type="button">Coming Soon</Link>
             </div>
-            <div>
+            {/* <div>
               <p className="home__project-case-study-1">The Care App</p>
               <p className="home__project-case-study-2">UX + UI</p>
-            </div>
+            </div> */}
           </div>
 
           {/* <div>
