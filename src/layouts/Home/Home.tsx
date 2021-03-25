@@ -9,7 +9,7 @@ import TypedAnimationComp from '../../components/TypedAnimationComp/TypedAnimati
 const Home = () => (
   <div className="home">
     {/* <AnimateOnScrollComp direction={AnimationDirection.Right}> */}
-    <p className="home_location">📍 Sydney, NSW</p>
+    <p className="home_location">📍 Sydney, ☀️ Australia</p>
     <p className="home__greeting">
       Hi, I'm <TypedAnimationComp strings={[
         'Jimmy Chan!',
@@ -20,8 +20,12 @@ const Home = () => (
       </TypedAnimationComp>
     </p>
     <blockquote className="home__blockquote">
-      A <span className="home__text-emphasis">creative individualist</span> who loves to explore and utilize his skills using
+      {/* <span className="home__text-emphasis"> */}
+      A creative individualistwho loves to explore and utilize his skills using
       a variety of skillsets to solve real-life challenges, while also adding value.
+    </blockquote>
+    <blockquote className="home__blockquote-company">
+      Currently working at <span className="company_name">Westpac Group</span>.
     </blockquote>
     <p className="home__lets-talk"><a href="mailto:jimmychan018@gmail.com" id="home__lets-talk">Let's work together →</a></p>
     {/* </AnimateOnScrollComp> */}
@@ -41,6 +45,9 @@ const Home = () => (
                 <p className="home__project-case-study-type">User Research</p>
               </div> */}
               <Link to="/ProjectOne"><img src={caseOne} alt='Case Study One' loading="lazy"/></Link>
+            </div>
+            <div className="home__project-case-btn">
+                <Link className="button disabled-link" to="/ProjectOne" type="button">Coming Soon</Link>
             </div>
             <div>
               <p className="home__project-case-study-1">The Care App</p>

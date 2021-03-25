@@ -29,6 +29,11 @@
     letter-spacing: 0.1rem;
   }
 
+  .company_name {
+    font-style: unset;
+    color: #5C5C5C;
+  }
+
   .home__lets-talk {
     color: $black;
     font-size: 1.8rem;
@@ -36,7 +41,7 @@
     text-decoration: underline;
     text-underline-offset: .3em;
     text-decoration-thickness: 2.5px;
-    margin-top: 3em;
+    margin-top: 0.8em;
     letter-spacing: 0.1rem;
   }
 
@@ -87,10 +92,30 @@
     font-size: 1.65rem;
   }
 
+  .home__blockquote-company {
+    font-style: unset;
+    margin: 40px 0 0 0;
+    font-size: 1.7rem;
+    margin-top: 4rem;
+    line-height: 3.5rem;
+    color: #5C5C5C;
+    font-weight: $font-weight-regular;
+    @media screen and (min-width: 1440px) {
+      width: 75%;
+    }
+
+    @media screen and (min-width: 1903px) {
+      width: 100%;
+    }
+    // @media screen and (min-width: 1903px) {
+    //   font-size: 1.72rem;
+    // }
+  }
+
   .home__blockquote {
     font-style: unset;
     margin: 40px 0 0 0;
-    font-size: 1.65rem;
+    font-size: 1.9rem;
     line-height: 3.5rem;
     color: #5C5C5C;
     font-weight: $font-weight-regular;
@@ -100,7 +125,7 @@
     }
 
     @media screen and (min-width: 1903px) {
-      width: 90%;
+      width: 100%;
     }
     // @media screen and (min-width: 1903px) {
     //   font-size: 1.72rem;
@@ -244,9 +269,10 @@
 
   .home__project-case-btn {
     text-align: right;
+    margin-top: 30px;
 
     .button {
-      border-radius: 25px;
+      border-radius: 5px;
       color: #8d96b2;
       font-weight: $font-weight-semi-bold;
       padding: 24px;
@@ -287,7 +313,7 @@
     }
 
     @media screen and (min-width: 1224px) {
-      width: 550px;
+      width: 560px;
     }
   }
 
@@ -304,7 +330,7 @@
 
     @media screen and (min-width: 1224px) {
       // height: 400px;
-      height: 420px;
+      height: 430px;
       width: 560px;
     }
 
@@ -313,6 +339,10 @@
       height: 100%;
       width: 100%;
       transition: transform 0.3s, opacity 0.3s ease-in-out;
+    }
+
+    .button {
+      margin-top: 20px;
     }
 
     .home__project-case-study-content {
