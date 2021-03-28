@@ -63,10 +63,10 @@ class CustomTheme extends React.Component<any, IState> {
       <ThemeProvider theme={LightTheme}>
         <GlobalStyles>
           <div
-            className="bg-img"
-            style={{
-              height: location.pathname === '/ProjectOne' ? '100vh' : 'auto'
-            }}
+            // className="bg-img"
+            // style={{
+            //   height: location.pathname === '/ProjectOne' ? '100vh' : 'auto'
+            // }}
           >
             <CustomNavbar themeStyle={LightTheme} isProjectOne={location.pathname === '/ProjectOne'}>
               {/* <button

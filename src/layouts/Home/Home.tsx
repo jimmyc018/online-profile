@@ -1,7 +1,8 @@
 import React from 'react';
 
 import './Home.scss';
-import caseOne from '../../assets/Shot1.png';
+import caseOne from '../../assets/testing.png';
+import caseTwo from '../../assets/Shot3.png';
 import { Link } from 'react-router-dom';
 import AnimateOnScrollComp, { AnimationDirection } from '../../components/AnimateOnScrollComp/AnimateOnScrollComp';
 import TypedAnimationComp from '../../components/TypedAnimationComp/TypedAnimationComp';
@@ -9,7 +10,7 @@ import TypedAnimationComp from '../../components/TypedAnimationComp/TypedAnimati
 const Home = () => (
   <div className="home">
     {/* <AnimateOnScrollComp direction={AnimationDirection.Right}> */}
-    <p className="home_location">📍 Sydney, ☀️ Australia</p>
+    {/* <p className="home_location">📍 Sydney, ☀️ Australia</p> */}
     <p className="home__greeting">
       Hi, I'm <TypedAnimationComp strings={[
         'Jimmy Chan!',
@@ -30,10 +31,6 @@ const Home = () => (
     <p className="home__lets-talk"><a href="mailto:jimmychan018@gmail.com" id="home__lets-talk">Let's work together →</a></p>
     {/* </AnimateOnScrollComp> */}
     <div className="home__project">
-      {/* <div className="home__project-head">
-        <img src={document} alt="document-icon" loading="lazy" className="home__project-document-icon"/>
-        <p className="home__project-title">Projects I've Done</p>
-      </div> */}
       <section className="home__project-case">
         {/* <AnimateOnScrollComp className="home__project-case-study">
         </AnimateOnScrollComp> */}
@@ -44,28 +41,44 @@ const Home = () => (
                 <h3 className="home__project-case-study-name">Care App</h3>
                 <p className="home__project-case-study-type">User Research</p>
               </div> */}
-              <Link to="/ProjectOne"><img src={caseOne} alt='Case Study One' loading="lazy"/></Link>
+              <img src={caseOne} alt='Case Study One' loading="lazy"/>
             </div>
+
             <div className="home__project-case-btn">
-                <Link className="button disabled-link" to="/ProjectOne" type="button">Coming Soon</Link>
+              <div className="home__project-case-tags">
+                <span className="tag">Mobile App</span>
+                <span className="tag">UX Research</span>
+                <span className="tag">Health Care</span>
+              </div>
+              <Link className="button " to="/ProjectOne" type="button">Coming Soon</Link>
             </div>
+
             {/* <div>
               <p className="home__project-case-study-1">The Care App</p>
               <p className="home__project-case-study-2">UX + UI</p>
             </div> */}
           </div>
 
+          <div className="home__project-case-study">
+            <div className="home__project-case-study-img-container">
+              {/* <div className="home__project-case-study-content">
+                <h3 className="home__project-case-study-name">Coming Soon</h3>
+                <p className="home__project-case-study-type">User Research</p>
+              </div> */}
+              <img className="imgOne" src={caseTwo} alt='Case Study One' loading="lazy"/>
+            </div>
+            <div className="home__project-case-btn">
+              <div className="home__project-case-tags">
+                <span className="tag">Data Analytics</span>
+                <span className="tag">UX Research</span>
+              </div>
+              <Link className="button disabled-link " to="/ProjectOne" type="button">Coming Soon</Link>
+            </div>
+          </div>
+
           {/* <div>
               <p className="home__project-case-study-type">Care is an iOS and Andriod platform to help reduce wait time and increase better user
             experience for patients by also assisting practitioners to save valuable time they require.</p>
-          </div> */}
-{/*
-          <div className="home__project-case-study-img-container">
-              <div className="home__project-case-study-content">
-                <h3 className="home__project-case-study-name">Care App</h3>
-                <p className="home__project-case-study-type">User Research</p>
-              </div>
-              <Link to="/ProjectOne"><img src={caseOne} alt='Case Study One' loading="eager"/></Link>
           </div> */}
         </div>
         {/* <div className="home__project-case-mini-area">
@@ -86,10 +99,6 @@ const Home = () => (
         </div> */}
       </section>
     </div>
-    {/* <section className="home__bio">
-        <h3 className="home__bio-lets-chat">Want to know more about me? Let's have a chat 💬?</h3>
-        <a href="mailto:jimmychan018@gmail.com" className="home__shoot-me-message">Send me a message ✉️</a>
-    </section> */}
   </div>
 );
 
