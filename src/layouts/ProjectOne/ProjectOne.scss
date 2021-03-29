@@ -14,4 +14,57 @@
     margin-top: 60px;
   }
 
+  .projectOne__content-row {
+    display: flex;
+    margin-top: 4rem;
+  }
+
+  .projectOne__content-left-col {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    margin-bottom: 100px;
+
+  }
+
+  .projectOne__content-right-col {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    margin-left: 5rem;
+    width: 150px;
+  }
+
+  .projectOne__content-desc {
+    margin-bottom: 10px;
+    font-size: 0.85rem;
+    color: #6e757e;
+    font-weight: $font-weight-medium;
+  }
+
+  .projectOne__problem-desc {
+    font-size: 1.2rem;
+    text-align: justify;
+    margin-right: 200px;
+    line-height: 2.5rem;
+  }
+
+  .projectOne__content-right-col-desc {
+    font-size: 1.5em;
+    text-align: justify;
+    margin-right: 200px;
+    color: #6e757e;
+  }
+
+  .projectOne__content-problem {
+    font-size: 1rem;
+    font-weight: $font-weight-semi-bold;
+    margin-bottom: 15px;
+  }
+
+  .projectOne__content-title {
+    margin-bottom: 10px;
+    font-weight: $font-weight-bold;
+
+  }
 }

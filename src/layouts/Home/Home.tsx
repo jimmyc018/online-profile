@@ -50,7 +50,7 @@ const Home = () => (
                 <span className="tag">UX Research</span>
                 <span className="tag">Health Care</span>
               </div>
-              <Link className="button " to="/ProjectOne" type="button">Coming Soon</Link>
+              <Link className="button disabled-link" to="/ProjectOne" type="button">Coming Soon</Link>
             </div>
 
             {/* <div>
