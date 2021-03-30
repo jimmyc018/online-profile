@@ -4,7 +4,7 @@
 
   &__heading {
     margin-top: 30px;
-    font-size: 3.5rem;
+    font-size: 3.8rem;
     font-weight: $font-weight-regular;
     letter-spacing: 0.2rem;
     text-align: center;
@@ -38,7 +38,7 @@
   .projectOne__content-desc {
     margin-bottom: 10px;
     font-size: 0.85rem;
-    color: #6e757e;
+    color: #5C5C5C;
     font-weight: $font-weight-medium;
   }
 
@@ -47,24 +47,27 @@
     text-align: justify;
     margin-right: 200px;
     line-height: 2.5rem;
+    color: #5C5C5C;
+    margin-bottom: 100px;
   }
 
   .projectOne__content-right-col-desc {
-    font-size: 1.5em;
+    font-size: 1.3em;
     text-align: justify;
     margin-right: 200px;
-    color: #6e757e;
+    margin-bottom: 20px;
+    line-height: 2.5rem;
   }
 
   .projectOne__content-problem {
     font-size: 1rem;
     font-weight: $font-weight-semi-bold;
     margin-bottom: 15px;
+    color: #5C5C5C;
   }
 
   .projectOne__content-title {
     margin-bottom: 10px;
     font-weight: $font-weight-bold;
-
   }
 }

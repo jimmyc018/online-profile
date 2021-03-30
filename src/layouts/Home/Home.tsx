@@ -34,6 +34,7 @@ const Home = () => (
       <section className="home__project-case">
         {/* <AnimateOnScrollComp className="home__project-case-study">
         </AnimateOnScrollComp> */}
+        <p className="home__project-case-featured">📌 Featured Projects</p>
         <div className="home__project-case-studies">
           <div className="home__project-case-study">
             <div className="home__project-case-study-img-container">
@@ -50,7 +51,7 @@ const Home = () => (
                 <span className="tag">UX Research</span>
                 <span className="tag">Health Care</span>
               </div>
-              <Link className="button disabled-link" to="/ProjectOne" type="button">Coming Soon</Link>
+              <Link className="button " to="/ProjectOne" type="button">Coming Soon</Link>
             </div>
 
             {/* <div>
