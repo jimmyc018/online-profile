@@ -22,7 +22,7 @@ const Home = () => (
     </p>
     <blockquote className="home__blockquote">
       {/* <span className="home__text-emphasis"> */}
-      A creative individualistwho loves to explore and utilize his skills using
+      A creative individualist who loves to explore and utilize his skills using
       a variety of skillsets to solve real-life challenges, while also adding value.
     </blockquote>
     <blockquote className="home__blockquote-company">
