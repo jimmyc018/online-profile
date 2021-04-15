@@ -1,13 +1,43 @@
 @import '../../styles/variables';
 
 .projectOne {
+  margin: 0 8rem;
+
+  .caseStudy__problem-title {
+    color: #656986;
+    font-size: 1.25rem;
+    font-style: $font-weight-semi-bold;
+  }
+
+  .boldText {
+    color: #656986;
+  }
+
+  .caseStudy__problem-statement-part-two {
+    color: #656986;
+    // font-size: calc((1.6 - 1) * 1.2vw + 1rem);
+    font-size: 1.6rem;
+    font-weight: $font-weight-medium;
+    text-align: justify;
+    margin: 2.2rem 0;
+  }
+
+  .caseStudy__problem-statement {
+    color: #656986;
+    // font-size: calc((1.6 - 1) * 1.2vw + 1rem);
+    font-size: 1.3rem;
+    font-weight: $font-weight-medium;
+    text-align: justify;
+    margin: 2.2rem 0;
+  }
 
   &__heading {
     margin-top: 30px;
-    font-size: 3.8rem;
+    font-size: 4rem;
     font-weight: $font-weight-regular;
     letter-spacing: 0.2rem;
     text-align: center;
+    color: #62687f;
   }
 
   &__cover {
@@ -38,36 +68,39 @@
   .projectOne__content-desc {
     margin-bottom: 10px;
     font-size: 0.85rem;
-    color: #5C5C5C;
+    color: #62687f;
     font-weight: $font-weight-medium;
   }
 
   .projectOne__problem-desc {
     font-size: 1.2rem;
     text-align: justify;
-    margin-right: 200px;
+    margin-right: 180px;
     line-height: 2.5rem;
-    color: #5C5C5C;
+    color: #62687f;
     margin-bottom: 100px;
   }
 
   .projectOne__content-right-col-desc {
     font-size: 1.3em;
     text-align: justify;
-    margin-right: 200px;
+    margin-right: 180px;
     margin-bottom: 20px;
     line-height: 2.5rem;
+    color: #62687f;
+    font-weight: $font-weight-semi-bold;
   }
 
   .projectOne__content-problem {
-    font-size: 1rem;
+    font-size: 1.4rem;
     font-weight: $font-weight-semi-bold;
     margin-bottom: 15px;
-    color: #5C5C5C;
+    color: #343b4c;
   }
 
   .projectOne__content-title {
     margin-bottom: 10px;
+    color: #343b4c;
     font-weight: $font-weight-bold;
   }
 }
